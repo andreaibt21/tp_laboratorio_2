@@ -62,7 +62,6 @@ namespace TP1
             this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // BtnCerrar
             // 
@@ -85,6 +84,7 @@ namespace TP1
             this.btnConvertirABinario.TabIndex = 3;
             this.btnConvertirABinario.Text = "Convertir a Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = false;
+            this.btnConvertirABinario.Click += new System.EventHandler(this.btnConvertirABinario_Click);
             // 
             // btnConvertirADecimal
             // 
@@ -108,7 +108,7 @@ namespace TP1
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(498, 40);
+            this.lblResultado.Location = new System.Drawing.Point(432, 27);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(75, 20);
             this.lblResultado.TabIndex = 6;

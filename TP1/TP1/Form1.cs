@@ -19,7 +19,15 @@ namespace TP1
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            btnLimpiar.Text = "HOLa";
+            string numeroIngresafp
+
+            textNumero1.Text = ;
+            lblResultado.Text = ;
+        }
+
+        private void btnConvertirABinario_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
