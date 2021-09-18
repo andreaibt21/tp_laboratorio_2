@@ -13,19 +13,30 @@ namespace Entidades
 
 
         #region CONSTRUCTORES
-       
+       /// <summary>
+       /// inicializa el campo numero en 0;
+       /// </summary>
         public Operando()
         {
             this.numero = 0;
         }
+
+        /// <summary>
+        /// inicializa el campo numero en el numero ingresado por parametro
+        /// </summary>
+        /// <param name="numero"></param>
         public Operando(double numero)
         {
             this.numero = numero;
         }
 
+        /// <summary>
+        /// inicializa el campo numero en el numero ingresado por parametro
+        /// </summary>
+        /// <param name="strNumero"></param>
         public Operando(string strNumero)
         {
-           Numero = strNumero;
+            this.Numero = strNumero;
         }
 
         public string  Numero
@@ -76,17 +87,17 @@ namespace Entidades
         
         
         #region CONVERSORES
-        public string BinarioDecimal(string binarioRecibido)
+        public string BinarioDecimal(string numero)
         {
             double digitoAuxiliar;
-            double potencias = binarioRecibido.Length - 1;
+            double potencias = numero.Length - 1;
             double numeroEnDecimal = 0;
             string charAuxiliar;
             int numeroFinal;
 
-            if ( String.IsNullOrEmpty(binarioRecibido) == false && EsBinario(binarioRecibido) ) 
+            if ( String.IsNullOrEmpty(numero) == false && EsBinario(numero) ) 
             {
-                foreach (char digito in binarioRecibido)
+                foreach (char digito in numero)
                 {
                     charAuxiliar = digito.ToString();
                     double.TryParse(charAuxiliar, out digitoAuxiliar);
@@ -104,22 +115,57 @@ namespace Entidades
        public string DecimalBinario(double  numero)
        {
             string valorBinario = string.Empty;
-            double resultadoDivision = numero;
-            double restoDivision;
-
-            if(resultadoDivision >= 0)
+            int resultadoDivision = (int)Math.Abs(numero);
+            if (resultadoDivision >= 0)
             {
-                do 
+                do
                 {
-                    restoDivision = resultadoDivision % 2;
+                    valorBinario = resultadoDivision % 2 + valorBinario;
                     resultadoDivision /= 2;
-                    valorBinario = restoDivision.ToString() + valorBinario;
 
                 } while (resultadoDivision > 0);
                 return valorBinario;
             }
             return "valor Invalido";
        }
+
+        public string DecimalBinario(string numeroRecibido)
+        {
+            double numeroDouble;
+            double.TryParse(numeroRecibido, out numeroDouble);
+            
+            return DecimalBinario(numeroDouble);
+        }
+        #endregion
+
+
+
+        #region OPERATORS
+
+        public static double operator /(Operando n1, Operando n2)
+        {
+
+            if (n2.numero == 0)
+            {
+                return  double.MinValue;
+            }
+            else
+            {
+                return n1.numero / n2.numero;
+            }
+        }
+        public static double operator *(Operando n1, Operando n2)
+        {
+            return n1.numero * n2.numero;
+        }
+        public static double operator -(Operando n1, Operando n2) 
+        {
+            return n1.numero - n2.numero;
+        }
+        public static double operator +(Operando n1, Operando n2)
+        {
+            return n1.numero + n2.numero;
+        }
 
         #endregion
 

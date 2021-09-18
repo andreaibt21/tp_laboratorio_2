@@ -1,7 +1,7 @@
 ﻿
 namespace TP1
 {
-    partial class Form1
+    partial class FormCalculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,6 +29,7 @@ namespace TP1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculadora));
             this.btnOperar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
@@ -36,7 +37,7 @@ namespace TP1
             this.btnConvertirADecimal = new System.Windows.Forms.Button();
             this.cmbOperar = new System.Windows.Forms.ComboBox();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.lblOperaciones = new System.Windows.Forms.ListBox();
+            this.lstOperaciones = new System.Windows.Forms.ListBox();
             this.textNumero1 = new System.Windows.Forms.TextBox();
             this.textNumero2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -44,43 +45,50 @@ namespace TP1
             // btnOperar
             // 
             this.btnOperar.BackColor = System.Drawing.Color.Teal;
+            this.btnOperar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOperar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnOperar.Location = new System.Drawing.Point(62, 148);
+            this.btnOperar.Location = new System.Drawing.Point(79, 245);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(127, 39);
             this.btnOperar.TabIndex = 0;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = false;
+            this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.Teal;
+            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLimpiar.Location = new System.Drawing.Point(229, 148);
+            this.btnLimpiar.Location = new System.Drawing.Point(242, 245);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(127, 39);
             this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // BtnCerrar
             // 
             this.BtnCerrar.BackColor = System.Drawing.Color.Teal;
+            this.BtnCerrar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnCerrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCerrar.Location = new System.Drawing.Point(405, 148);
+            this.BtnCerrar.Location = new System.Drawing.Point(405, 245);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(127, 39);
             this.BtnCerrar.TabIndex = 2;
             this.BtnCerrar.Text = "Cerrar";
             this.BtnCerrar.UseVisualStyleBackColor = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // btnConvertirABinario
             // 
             this.btnConvertirABinario.BackColor = System.Drawing.Color.Teal;
+            this.btnConvertirABinario.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConvertirABinario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConvertirABinario.Location = new System.Drawing.Point(92, 214);
+            this.btnConvertirABinario.Location = new System.Drawing.Point(79, 354);
             this.btnConvertirABinario.Name = "btnConvertirABinario";
-            this.btnConvertirABinario.Size = new System.Drawing.Size(148, 39);
+            this.btnConvertirABinario.Size = new System.Drawing.Size(181, 51);
             this.btnConvertirABinario.TabIndex = 3;
             this.btnConvertirABinario.Text = "Convertir a Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = false;
@@ -89,63 +97,81 @@ namespace TP1
             // btnConvertirADecimal
             // 
             this.btnConvertirADecimal.BackColor = System.Drawing.Color.Teal;
+            this.btnConvertirADecimal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnConvertirADecimal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConvertirADecimal.Location = new System.Drawing.Point(295, 214);
+            this.btnConvertirADecimal.Location = new System.Drawing.Point(362, 354);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
-            this.btnConvertirADecimal.Size = new System.Drawing.Size(148, 39);
+            this.btnConvertirADecimal.Size = new System.Drawing.Size(181, 51);
             this.btnConvertirADecimal.TabIndex = 4;
             this.btnConvertirADecimal.Text = "Convertir a Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = false;
             // 
             // cmbOperar
             // 
+            this.cmbOperar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cmbOperar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbOperar.FormattingEnabled = true;
-            this.cmbOperar.Location = new System.Drawing.Point(243, 77);
+            this.cmbOperar.Items.AddRange(new object[] {
+            "",
+            "+",
+            "-",
+            "/",
+            "*"});
+            this.cmbOperar.Location = new System.Drawing.Point(229, 148);
             this.cmbOperar.Name = "cmbOperar";
-            this.cmbOperar.Size = new System.Drawing.Size(75, 28);
+            this.cmbOperar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbOperar.Size = new System.Drawing.Size(113, 31);
             this.cmbOperar.TabIndex = 5;
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(432, 27);
+            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblResultado.Location = new System.Drawing.Point(343, 81);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(75, 20);
+            this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblResultado.Size = new System.Drawing.Size(200, 25);
             this.lblResultado.TabIndex = 6;
-            this.lblResultado.Text = "Resultado";
+            this.lblResultado.Text = "0";
             // 
-            // lblOperaciones
+            // lstOperaciones
             // 
-            this.lblOperaciones.FormattingEnabled = true;
-            this.lblOperaciones.ItemHeight = 20;
-            this.lblOperaciones.Location = new System.Drawing.Point(586, 27);
-            this.lblOperaciones.Name = "lblOperaciones";
-            this.lblOperaciones.Size = new System.Drawing.Size(177, 264);
-            this.lblOperaciones.TabIndex = 7;
+            this.lstOperaciones.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lstOperaciones.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lstOperaciones.FormattingEnabled = true;
+            this.lstOperaciones.ItemHeight = 23;
+            this.lstOperaciones.Location = new System.Drawing.Point(580, 148);
+            this.lstOperaciones.Name = "lstOperaciones";
+            this.lstOperaciones.Size = new System.Drawing.Size(177, 257);
+            this.lstOperaciones.TabIndex = 7;
             // 
             // textNumero1
             // 
-            this.textNumero1.Location = new System.Drawing.Point(46, 78);
+            this.textNumero1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textNumero1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textNumero1.Location = new System.Drawing.Point(27, 148);
             this.textNumero1.Name = "textNumero1";
-            this.textNumero1.Size = new System.Drawing.Size(142, 27);
+            this.textNumero1.Size = new System.Drawing.Size(142, 30);
             this.textNumero1.TabIndex = 8;
             // 
             // textNumero2
             // 
-            this.textNumero2.Location = new System.Drawing.Point(390, 78);
+            this.textNumero2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textNumero2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textNumero2.Location = new System.Drawing.Point(390, 148);
             this.textNumero2.Name = "textNumero2";
-            this.textNumero2.Size = new System.Drawing.Size(142, 27);
+            this.textNumero2.Size = new System.Drawing.Size(142, 30);
             this.textNumero2.TabIndex = 9;
             // 
-            // Form1
+            // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(787, 352);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(805, 482);
             this.Controls.Add(this.textNumero2);
             this.Controls.Add(this.textNumero1);
-            this.Controls.Add(this.lblOperaciones);
+            this.Controls.Add(this.lstOperaciones);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.cmbOperar);
             this.Controls.Add(this.btnConvertirADecimal);
@@ -153,8 +179,10 @@ namespace TP1
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnOperar);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormCalculadora";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "Calculadora de Andrea Briceño del curso 2°C";
+            this.Load += new System.EventHandler(this.FormCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,7 +197,7 @@ namespace TP1
         private System.Windows.Forms.Button btnConvertirADecimal;
         private System.Windows.Forms.ComboBox cmbOperar;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.ListBox lblOperaciones;
+        private System.Windows.Forms.ListBox lstOperaciones;
         private System.Windows.Forms.TextBox textNumero1;
         private System.Windows.Forms.TextBox textNumero2;
     }
