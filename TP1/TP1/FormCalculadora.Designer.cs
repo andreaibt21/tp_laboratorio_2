@@ -35,7 +35,7 @@ namespace TP1
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.btnConvertirABinario = new System.Windows.Forms.Button();
             this.btnConvertirADecimal = new System.Windows.Forms.Button();
-            this.cmbOperar = new System.Windows.Forms.ComboBox();
+            this.cmbOperador = new System.Windows.Forms.ComboBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lstOperaciones = new System.Windows.Forms.ListBox();
             this.textNumero1 = new System.Windows.Forms.TextBox();
@@ -105,23 +105,24 @@ namespace TP1
             this.btnConvertirADecimal.TabIndex = 4;
             this.btnConvertirADecimal.Text = "Convertir a Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = false;
+            this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
-            // cmbOperar
+            // cmbOperador
             // 
-            this.cmbOperar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cmbOperar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cmbOperar.FormattingEnabled = true;
-            this.cmbOperar.Items.AddRange(new object[] {
+            this.cmbOperador.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cmbOperador.FormattingEnabled = true;
+            this.cmbOperador.Items.AddRange(new object[] {
             "",
             "+",
             "-",
             "/",
             "*"});
-            this.cmbOperar.Location = new System.Drawing.Point(229, 148);
-            this.cmbOperar.Name = "cmbOperar";
-            this.cmbOperar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbOperar.Size = new System.Drawing.Size(113, 31);
-            this.cmbOperar.TabIndex = 5;
+            this.cmbOperador.Location = new System.Drawing.Point(229, 148);
+            this.cmbOperador.Name = "cmbOperador";
+            this.cmbOperador.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cmbOperador.Size = new System.Drawing.Size(113, 31);
+            this.cmbOperador.TabIndex = 5;
             // 
             // lblResultado
             // 
@@ -152,6 +153,7 @@ namespace TP1
             this.textNumero1.Name = "textNumero1";
             this.textNumero1.Size = new System.Drawing.Size(142, 30);
             this.textNumero1.TabIndex = 8;
+            this.textNumero1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textNumero1_KeyPress);
             // 
             // textNumero2
             // 
@@ -161,6 +163,7 @@ namespace TP1
             this.textNumero2.Name = "textNumero2";
             this.textNumero2.Size = new System.Drawing.Size(142, 30);
             this.textNumero2.TabIndex = 9;
+            this.textNumero2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textNumero2_KeyPress);
             // 
             // FormCalculadora
             // 
@@ -173,15 +176,20 @@ namespace TP1
             this.Controls.Add(this.textNumero1);
             this.Controls.Add(this.lstOperaciones);
             this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.cmbOperar);
+            this.Controls.Add(this.cmbOperador);
             this.Controls.Add(this.btnConvertirADecimal);
             this.Controls.Add(this.btnConvertirABinario);
             this.Controls.Add(this.BtnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnOperar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormCalculadora";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Andrea Briceño del curso 2°C";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCalculadora_FormClosing);
             this.Load += new System.EventHandler(this.FormCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,7 +203,7 @@ namespace TP1
         private System.Windows.Forms.Button BtnCerrar;
         private System.Windows.Forms.Button btnConvertirABinario;
         private System.Windows.Forms.Button btnConvertirADecimal;
-        private System.Windows.Forms.ComboBox cmbOperar;
+        private System.Windows.Forms.ComboBox cmbOperador;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.ListBox lstOperaciones;
         private System.Windows.Forms.TextBox textNumero1;

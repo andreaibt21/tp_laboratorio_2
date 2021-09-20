@@ -4,6 +4,11 @@ namespace Entidades
 {
     public static class Calculadora
     {
+        /// <summary>
+        /// Valida que el operador recibido sea +, -, / o*. Caso contrario retornará +
+        /// </summary>
+        /// <param name="operador">operador a usar</param>
+        /// <returns></returns>
         private static char ValidarOperador(char operador)
         {
             if ( operador != '+' && 
@@ -16,6 +21,14 @@ namespace Entidades
 
             return operador;
         }
+
+        /// <summary>
+        /// Valida los numeros pasados por parametro y realiza la operación pedida entre ambos números
+        /// </summary>
+        /// <param name="num1">numero </param>
+        /// <param name="num2">numero</param>
+        /// <param name="operador">operador entre dos numeros</param>
+        /// <returns></returns>
         public static double Operar(Operando num1, Operando num2, char operador)
         {
 
