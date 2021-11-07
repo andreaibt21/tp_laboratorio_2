@@ -1,0 +1,522 @@
+[
+  {
+    "Dni": 26874159,
+    "Nombre": "Arlina",
+    "Apellido": "Pirulo",
+    "Edad": 25,
+    "CantidadDePokebolas": 5,
+    "Campeon": false,
+    "Isla": "Prima",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 173,
+        "Hp": 50,
+        "Especie": "Cleffa",
+        "Tipo": "Fairy",
+        "Ataque": 25,
+        "Defensa": 28,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Snore"
+      },
+      {
+        "Id": 174,
+        "Hp": 90,
+        "Especie": "Igglybuff",
+        "Tipo": "Normal",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Curse"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      },
+      {
+        "Id": 239,
+        "Hp": 45,
+        "Especie": "Elekid",
+        "Tipo": "Electric",
+        "Ataque": 63,
+        "Defensa": 37,
+        "Velocidad": 95,
+        "NombreDeAtaque": "Twister"
+      }
+    ]
+  },
+  {
+    "Dni": 24859756,
+    "Nombre": "Peeta",
+    "Apellido": "Langila",
+    "Edad": 26,
+    "CantidadDePokebolas": 3,
+    "Campeon": true,
+    "Isla": "Secunda",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 298,
+        "Hp": 50,
+        "Especie": "Azurill",
+        "Tipo": "Normal",
+        "Ataque": 20,
+        "Defensa": 40,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Teeter Dance"
+      }
+    ]
+  },
+  {
+    "Dni": 26584258,
+    "Nombre": "Gaston",
+    "Apellido": "Pelado",
+    "Edad": 27,
+    "CantidadDePokebolas": 4,
+    "Campeon": false,
+    "Isla": "Quarta",
+    "Pokemones": [
+      {
+        "Id": 173,
+        "Hp": 50,
+        "Especie": "Cleffa",
+        "Tipo": "Fairy",
+        "Ataque": 25,
+        "Defensa": 28,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Snore"
+      },
+      {
+        "Id": 238,
+        "Hp": 45,
+        "Especie": "Smoochum",
+        "Tipo": "Ice",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 65,
+        "NombreDeAtaque": "Cross Chop"
+      },
+      {
+        "Id": 360,
+        "Hp": 95,
+        "Especie": "Wynaut",
+        "Tipo": "Psychic",
+        "Ataque": 23,
+        "Defensa": 48,
+        "Velocidad": 23,
+        "NombreDeAtaque": "Gyro Ball"
+      }
+    ]
+  },
+  {
+    "Dni": 18495623,
+    "Nombre": "Lucas",
+    "Apellido": "Millenio",
+    "Edad": 22,
+    "CantidadDePokebolas": 3,
+    "Campeon": false,
+    "Isla": "Prima",
+    "Pokemones": [
+      {
+        "Id": 433,
+        "Hp": 45,
+        "Especie": "Chingling",
+        "Tipo": "Psychic",
+        "Ataque": 30,
+        "Defensa": 50,
+        "Velocidad": 45,
+        "NombreDeAtaque": "Trick Room"
+      },
+      {
+        "Id": 439,
+        "Hp": 20,
+        "Especie": "Mime Jr.",
+        "Tipo": "Psychic",
+        "Ataque": 25,
+        "Defensa": 45,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Rock Wrecker"
+      },
+      {
+        "Id": 240,
+        "Hp": 45,
+        "Especie": "Magby",
+        "Tipo": "Fire",
+        "Ataque": 75,
+        "Defensa": 37,
+        "Velocidad": 83,
+        "NombreDeAtaque": "Rain Dance"
+      }
+    ]
+  },
+  {
+    "Dni": 24515849,
+    "Nombre": "Milei",
+    "Apellido": "Sairus",
+    "Edad": 25,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "Roca_Ombligo",
+    "Pokemones": [
+      {
+        "Id": 175,
+        "Hp": 35,
+        "Especie": "Togepi",
+        "Tipo": "Fairy",
+        "Ataque": 20,
+        "Defensa": 65,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Flail"
+      },
+      {
+        "Id": 438,
+        "Hp": 50,
+        "Especie": "Bonsly",
+        "Tipo": "Rock",
+        "Ataque": 80,
+        "Defensa": 95,
+        "Velocidad": 10,
+        "NombreDeAtaque": "Power Whip"
+      },
+      {
+        "Id": 458,
+        "Hp": 45,
+        "Especie": "Mantyke",
+        "Tipo": "Water",
+        "Ataque": 20,
+        "Defensa": 50,
+        "Velocidad": 50,
+        "NombreDeAtaque": "Double Hit"
+      },
+      {
+        "Id": 360,
+        "Hp": 95,
+        "Especie": "Wynaut",
+        "Tipo": "Psychic",
+        "Ataque": 23,
+        "Defensa": 48,
+        "Velocidad": 23,
+        "NombreDeAtaque": "Gyro Ball"
+      },
+      {
+        "Id": 175,
+        "Hp": 35,
+        "Especie": "Togepi",
+        "Tipo": "Fairy",
+        "Ataque": 20,
+        "Defensa": 65,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Flail"
+      }
+    ]
+  },
+  {
+    "Dni": 27122876,
+    "Nombre": "Jorge",
+    "Apellido": "Caceruchis",
+    "Edad": 27,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [
+      {
+        "Id": 440,
+        "Hp": 100,
+        "Especie": "Happiny",
+        "Tipo": "Normal",
+        "Ataque": 5,
+        "Defensa": 5,
+        "Velocidad": 30,
+        "NombreDeAtaque": "Cross Poison"
+      },
+      {
+        "Id": 446,
+        "Hp": 135,
+        "Especie": "Munchlax",
+        "Tipo": "Normal",
+        "Ataque": 85,
+        "Defensa": 40,
+        "Velocidad": 5,
+        "NombreDeAtaque": " Stealth Rock"
+      },
+      {
+        "Id": 447,
+        "Hp": 40,
+        "Especie": "Riolu",
+        "Tipo": "Fighting",
+        "Ataque": 70,
+        "Defensa": 40,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Grass Knot"
+      },
+      {
+        "Id": 458,
+        "Hp": 45,
+        "Especie": "Mantyke",
+        "Tipo": "Water",
+        "Ataque": 20,
+        "Defensa": 50,
+        "Velocidad": 50,
+        "NombreDeAtaque": "Double Hit"
+      }
+    ]
+  },
+  {
+    "Dni": 27302063,
+    "Nombre": "Andre",
+    "Apellido": "Fabulosa",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [
+      {
+        "Id": 406,
+        "Hp": 40,
+        "Especie": "Budew",
+        "Tipo": "Grass",
+        "Ataque": 30,
+        "Defensa": 35,
+        "Velocidad": 55,
+        "NombreDeAtaque": "Dragon Pulse"
+      },
+      {
+        "Id": 433,
+        "Hp": 45,
+        "Especie": "Chingling",
+        "Tipo": "Psychic",
+        "Ataque": 30,
+        "Defensa": 50,
+        "Velocidad": 45,
+        "NombreDeAtaque": "Trick Room"
+      },
+      {
+        "Id": 438,
+        "Hp": 50,
+        "Especie": "Bonsly",
+        "Tipo": "Rock",
+        "Ataque": 80,
+        "Defensa": 95,
+        "Velocidad": 10,
+        "NombreDeAtaque": "Power Whip"
+      },
+      {
+        "Id": 439,
+        "Hp": 20,
+        "Especie": "Mime Jr.",
+        "Tipo": "Psychic",
+        "Ataque": 25,
+        "Defensa": 45,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Rock Wrecker"
+      },
+      {
+        "Id": 458,
+        "Hp": 45,
+        "Especie": "Mantyke",
+        "Tipo": "Water",
+        "Ataque": 20,
+        "Defensa": 50,
+        "Velocidad": 50,
+        "NombreDeAtaque": "Double Hit"
+      }
+    ]
+  },
+  {
+    "Dni": 21458695,
+    "Nombre": "Danubio",
+    "Apellido": "Chacao",
+    "Edad": 23,
+    "CantidadDePokebolas": 4,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [
+      {
+        "Id": 174,
+        "Hp": 90,
+        "Especie": "Igglybuff",
+        "Tipo": "Normal",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Curse"
+      },
+      {
+        "Id": 175,
+        "Hp": 35,
+        "Especie": "Togepi",
+        "Tipo": "Fairy",
+        "Ataque": 20,
+        "Defensa": 65,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Flail"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      },
+      {
+        "Id": 238,
+        "Hp": 45,
+        "Especie": "Smoochum",
+        "Tipo": "Ice",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 65,
+        "NombreDeAtaque": "Cross Chop"
+      }
+    ]
+  },
+  {
+    "Dni": 20354526,
+    "Nombre": "Don",
+    "Apellido": "Bosco",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 173,
+        "Hp": 50,
+        "Especie": "Cleffa",
+        "Tipo": "Fairy",
+        "Ataque": 25,
+        "Defensa": 28,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Snore"
+      },
+      {
+        "Id": 174,
+        "Hp": 90,
+        "Especie": "Igglybuff",
+        "Tipo": "Normal",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Curse"
+      },
+      {
+        "Id": 175,
+        "Hp": 35,
+        "Especie": "Togepi",
+        "Tipo": "Fairy",
+        "Ataque": 20,
+        "Defensa": 65,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Flail"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      }
+    ]
+  },
+  {
+    "Dni": 25849576,
+    "Nombre": "Ivy",
+    "Apellido": "Poison",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": false,
+    "Isla": "Quarta",
+    "Pokemones": [
+      {
+        "Id": 406,
+        "Hp": 40,
+        "Especie": "Budew",
+        "Tipo": "Grass",
+        "Ataque": 30,
+        "Defensa": 35,
+        "Velocidad": 55,
+        "NombreDeAtaque": "Dragon Pulse"
+      },
+      {
+        "Id": 433,
+        "Hp": 45,
+        "Especie": "Chingling",
+        "Tipo": "Psychic",
+        "Ataque": 30,
+        "Defensa": 50,
+        "Velocidad": 45,
+        "NombreDeAtaque": "Trick Room"
+      },
+      {
+        "Id": 438,
+        "Hp": 50,
+        "Especie": "Bonsly",
+        "Tipo": "Rock",
+        "Ataque": 80,
+        "Defensa": 95,
+        "Velocidad": 10,
+        "NombreDeAtaque": "Power Whip"
+      },
+      {
+        "Id": 439,
+        "Hp": 20,
+        "Especie": "Mime Jr.",
+        "Tipo": "Psychic",
+        "Ataque": 25,
+        "Defensa": 45,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Rock Wrecker"
+      },
+      {
+        "Id": 458,
+        "Hp": 45,
+        "Especie": "Mantyke",
+        "Tipo": "Water",
+        "Ataque": 20,
+        "Defensa": 50,
+        "Velocidad": 50,
+        "NombreDeAtaque": "Double Hit"
+      }
+    ]
+  }
+]

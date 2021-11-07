@@ -1,0 +1,46 @@
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.exe
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.deps.json
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.runtimeconfig.json
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.runtimeconfig.dev.json
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\ref\FormLiga.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.pdb
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Form_AgregarPokemon.resources
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Form_ManejoEntrenadores.resources
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Form_Menu.resources
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.GenerateResource.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.AssemblyInfoInputs.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.AssemblyInfo.cs
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\ref\FormLiga.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.pdb
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.genruntimeconfig.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Properties.Resources.resources
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Form_AgregarPokemon.resources
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Form_ManejoEntrenadores.resources
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Form_Menu.resources
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.Properties.Resources.resources
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.GenerateResource.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.AssemblyInfoInputs.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.AssemblyInfo.cs
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.exe
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.deps.json
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.runtimeconfig.json
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.runtimeconfig.dev.json
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\ref\FormLiga.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\FormLiga.pdb
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\ref\FormLiga.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.pdb
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.genruntimeconfig.cache
