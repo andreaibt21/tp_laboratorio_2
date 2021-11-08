@@ -35,6 +35,7 @@ namespace FormLiga
             this.cmb_filtro2 = new System.Windows.Forms.ComboBox();
             this.btn_mostrar = new System.Windows.Forms.Button();
             this.btn_Exportar = new System.Windows.Forms.Button();
+            this.checkB_EsCampeon = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Dtg_Entrenadores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,17 +45,18 @@ namespace FormLiga
             this.Dtg_Entrenadores.Location = new System.Drawing.Point(31, 167);
             this.Dtg_Entrenadores.Name = "Dtg_Entrenadores";
             this.Dtg_Entrenadores.RowTemplate.Height = 25;
-            this.Dtg_Entrenadores.Size = new System.Drawing.Size(506, 119);
+            this.Dtg_Entrenadores.Size = new System.Drawing.Size(506, 151);
             this.Dtg_Entrenadores.TabIndex = 0;
             // 
             // cmb_filtro
             // 
+            this.cmb_filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_filtro.FormattingEnabled = true;
             this.cmb_filtro.Items.AddRange(new object[] {
             "Por isla",
-            "Por entrenadores con mas pokemones",
-            "Por tipo de pokemon"});
-            this.cmb_filtro.Location = new System.Drawing.Point(31, 46);
+            "Por tipo de pokemon",
+            "Por entrenadores campeones"});
+            this.cmb_filtro.Location = new System.Drawing.Point(31, 65);
             this.cmb_filtro.Name = "cmb_filtro";
             this.cmb_filtro.Size = new System.Drawing.Size(262, 23);
             this.cmb_filtro.TabIndex = 2;
@@ -63,7 +65,7 @@ namespace FormLiga
             // lbl_seleccion
             // 
             this.lbl_seleccion.AutoSize = true;
-            this.lbl_seleccion.Location = new System.Drawing.Point(31, 19);
+            this.lbl_seleccion.Location = new System.Drawing.Point(168, 16);
             this.lbl_seleccion.Name = "lbl_seleccion";
             this.lbl_seleccion.Size = new System.Drawing.Size(188, 15);
             this.lbl_seleccion.TabIndex = 5;
@@ -71,12 +73,12 @@ namespace FormLiga
             // 
             // cmb_filtro2
             // 
+            this.cmb_filtro2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_filtro2.FormattingEnabled = true;
-            this.cmb_filtro2.Location = new System.Drawing.Point(310, 46);
+            this.cmb_filtro2.Location = new System.Drawing.Point(310, 65);
             this.cmb_filtro2.Name = "cmb_filtro2";
             this.cmb_filtro2.Size = new System.Drawing.Size(186, 23);
             this.cmb_filtro2.TabIndex = 6;
-            this.cmb_filtro2.SelectedIndexChanged += new System.EventHandler(this.cmb_filtro2_SelectedIndexChanged);
             // 
             // btn_mostrar
             // 
@@ -90,7 +92,7 @@ namespace FormLiga
             // 
             // btn_Exportar
             // 
-            this.btn_Exportar.Location = new System.Drawing.Point(421, 324);
+            this.btn_Exportar.Location = new System.Drawing.Point(421, 339);
             this.btn_Exportar.Name = "btn_Exportar";
             this.btn_Exportar.Size = new System.Drawing.Size(75, 23);
             this.btn_Exportar.TabIndex = 8;
@@ -98,11 +100,22 @@ namespace FormLiga
             this.btn_Exportar.UseVisualStyleBackColor = true;
             this.btn_Exportar.Click += new System.EventHandler(this.btn_Exportar_Click);
             // 
+            // checkB_EsCampeon
+            // 
+            this.checkB_EsCampeon.AutoSize = true;
+            this.checkB_EsCampeon.Location = new System.Drawing.Point(310, 67);
+            this.checkB_EsCampeon.Name = "checkB_EsCampeon";
+            this.checkB_EsCampeon.Size = new System.Drawing.Size(90, 19);
+            this.checkB_EsCampeon.TabIndex = 12;
+            this.checkB_EsCampeon.Text = "Es campeón";
+            this.checkB_EsCampeon.UseVisualStyleBackColor = true;
+            // 
             // Form_Informes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 385);
+            this.Controls.Add(this.checkB_EsCampeon);
             this.Controls.Add(this.btn_Exportar);
             this.Controls.Add(this.btn_mostrar);
             this.Controls.Add(this.cmb_filtro2);
@@ -129,5 +142,6 @@ namespace FormLiga
         private System.Windows.Forms.ComboBox cmb_filtro2;
         private System.Windows.Forms.Button btn_mostrar;
         private System.Windows.Forms.Button btn_Exportar;
+        private System.Windows.Forms.CheckBox checkB_EsCampeon;
     }
 }

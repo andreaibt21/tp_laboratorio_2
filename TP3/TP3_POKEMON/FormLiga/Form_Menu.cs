@@ -29,7 +29,7 @@ namespace FormLiga
             // SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.Entrenadores);
             // SerealizacionArchivoJson.SerealizarAJSON(rutaPokemon, miLigaPokemon.Pokemones);
 
-            //  DESEREALIZACIÓN
+            //DESEREALIZACIÓN
             miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
             miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
         }

@@ -257,7 +257,6 @@ namespace FormLiga
             this.list_Pokemones.Name = "list_Pokemones";
             this.list_Pokemones.Size = new System.Drawing.Size(530, 109);
             this.list_Pokemones.TabIndex = 25;
-            this.list_Pokemones.SelectedIndexChanged += new System.EventHandler(this.list_Pokemones_SelectedIndexChanged);
             // 
             // btnAgregar
             // 
@@ -297,6 +296,7 @@ namespace FormLiga
             this.btn_Eliminar.TabIndex = 29;
             this.btn_Eliminar.Text = "Eliminar Entrenador de la liga";
             this.btn_Eliminar.UseVisualStyleBackColor = true;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // Form_ManejoEntrenadores
             // 

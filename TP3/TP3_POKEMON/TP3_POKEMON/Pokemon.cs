@@ -95,7 +95,12 @@ namespace Entidades
         }
         #endregion
 
-
+        /// <summary>
+        ///un pokemon será igual a otro si tienen  el mismo id.
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
         public static bool operator ==(Pokemon p1, Pokemon p2)
         {
             if(p1 is not null && p2 is not null) 
@@ -108,11 +113,20 @@ namespace Entidades
                 return false;
             }
         }
+        /// <summary>
+        /// un pokemon será distinto a otro si no tienen  el mismo id.
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
         public static bool operator !=(Pokemon p1, Pokemon p2)
         {
             return !(p1 == p2);
         }
-
+        /// <summary>
+        /// retorna un string con los datos del pokemon
+        /// </summary>
+        /// <returns></returns>
         private string MostrarDatos() {
 
             StringBuilder sb = new StringBuilder();
@@ -124,7 +138,10 @@ namespace Entidades
             return sb.ToString();
         }
 
-
+        /// <summary>
+        ///     retorna mostrarDatos
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.MostrarDatos();

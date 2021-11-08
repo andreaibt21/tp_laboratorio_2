@@ -38,19 +38,25 @@ namespace FormLiga
 
             if (this.tipo == ETipo.alta)
             {
+                this.Text = "Formulario de inscripción a la liga Pokemon";
                 cmb_Entrenadores.Visible = false;
                 lbl_tipoEdicion.Visible = false;
                 lbl_Entrenador.Visible = false;
                 cmb_TipoEdicion.Visible = false;
                 btn_modificar.Visible = false;
+                btn_Eliminar.Visible = false;
             }
             else
             {
+                this.Text = "Formulario de modificacion de la liga Pokemon";
+                cmb_TipoEdicion.SelectedItem = 0;
                 cmb_Entrenadores.Visible = true;
                 lbl_tipoEdicion.Visible =  true;
                 lbl_Entrenador.Visible =   true;
                 cmb_TipoEdicion.Visible =  true;
                 btn_modificar.Visible =    true;
+                btn_Eliminar.Visible = false;
+              
             }
         }
 
@@ -68,6 +74,7 @@ namespace FormLiga
                     int.TryParse(txt_dni.Text, out dni);
                     Entrenador entrenador = new Entrenador(dni, txt_nombre.Text, txt_apellido.Text, edad, (int)numUD_pokebolas.Value,checkB_EsCampeon.Checked,(Islas)cmb_Islas.SelectedItem,pokemonesSeleccionados);
                     miLiga += entrenador;
+                    LimpiarFormulario();
                     MessageBox.Show($"Entrenador inscripto exitosamente con los siguientes datos: \n\n {entrenador.ToString()} ");
                }
                 else
@@ -105,7 +112,7 @@ namespace FormLiga
                     entrenadorAuxiliar.Campeon = checkB_EsCampeon.Checked;
                     entrenadorAuxiliar.Isla = (Islas)cmb_Islas.SelectedItem;
                
-                    MessageBox.Show($"Entrenador inscripto exitosamente con los siguientes datos: \n\n {entrenadorAuxiliar.ToString()} ");
+                    MessageBox.Show($"Se han actualizado los siguientes datos: \n\n {entrenadorAuxiliar.ToString()} ");
                 }
                 else
                 {
@@ -145,25 +152,33 @@ namespace FormLiga
 
         private void cmb_TipoEdicion_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //cmb_TipoEdicion.SelectionStart = 1;
+               
             if (cmb_TipoEdicion.SelectedIndex == 0)
             {
-                btn_Guardar.Text = "Guardar cambios";
+                btn_Guardar.Visible = true;
+                btn_Eliminar.Visible = false;
+                cmb_Islas.Enabled = true;
+                cmb_pokemon.Enabled = true;
+                checkB_EsCampeon.Enabled = true;
+                numUD_pokebolas.Enabled = true;
+                btnQuitar.Enabled = true;
+                btnAgregar.Enabled = true;
             }
             else
             {
-                btn_Guardar.Text = "Eliminar entrenador";
-
+               
+                btn_Eliminar.Visible = true;
+                cmb_Islas.Enabled = false; 
+                cmb_pokemon.Enabled = false; 
+                checkB_EsCampeon.Enabled = false; 
+                numUD_pokebolas.Enabled = false;
+                btnQuitar.Enabled = false;
+                btnAgregar.Enabled = false;
             }
         }
 
-        private void list_Pokemones_SelectedIndexChanged(object sender, EventArgs e)
-        {
-         //   Pokemon pokemonAliminar = (Pokemon)list_Pokemones.SelectedItem;
-
-
-        }
-   
-
+       
         private void RefrescarLista(List<Pokemon> pokemones)
         {
             list_Pokemones.Items.Clear();
@@ -255,6 +270,32 @@ namespace FormLiga
             }
         }
 
-     
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+
+
+            Entrenador entrenadorAuxiliar = (Entrenador)cmb_Entrenadores.SelectedItem;
+            if (entrenadorAuxiliar  is not null && this.miLiga is not null)
+            {
+                miLiga -= entrenadorAuxiliar;
+                LimpiarFormulario();
+                MessageBox.Show(" Entrenador eliminado correctamente");
+
+            }
+        }
+
+        private void LimpiarFormulario()
+        {
+            txt_dni.Clear();
+            txt_dni.Clear();
+            txt_nombre.Clear();
+            txt_apellido.Clear();
+            txt_edad.Clear();
+            numUD_pokebolas.Value = 1;
+            checkB_EsCampeon.Checked = false;
+            cmb_Islas.SelectedIndex = 1;
+            list_Pokemones.Items.Clear();
+            cmb_Entrenadores.DataSource = this.miLiga.Entrenadores.ToList();
+        }
     }
 }

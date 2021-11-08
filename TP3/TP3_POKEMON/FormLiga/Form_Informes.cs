@@ -27,12 +27,9 @@ namespace FormLiga
 
         private void Form_Informes_Load(object sender, EventArgs e)
         {
+            checkB_EsCampeon.Visible = false;
 
         }
-
-
-
-
 
         public static void RefrescarInformacion<T>(DataGridView data, List<T> listaAMostrar)
         {
@@ -49,34 +46,69 @@ namespace FormLiga
             switch (cmb_filtro.SelectedIndex)
             {
                 case 0:
-                        cmb_filtro2.DataSource = Enum.GetValues(typeof(Islas));
+                    cmb_filtro2.Visible = true;
+                    checkB_EsCampeon.Visible = false;
+                    cmb_filtro2.DataSource = Enum.GetValues(typeof(Islas));
 
                     break;
                 case 1:
-                        cmb_filtro2.DataSource = miLiga.Pokemones.ToList();
-                        cmb_filtro2.DisplayMember = "Especie";
-
-                    break;
-             
-                case 2:
+                    cmb_filtro2.Visible = true;
+                    checkB_EsCampeon.Visible = false;
                     cmb_filtro2.DataSource = Enum.GetValues(typeof(ETipos));
 
                     break;
+                case 2:
+                    cmb_filtro2.Visible = false;
+                    checkB_EsCampeon.Visible = true;
+
+                    break;
+             
             }
            
         }
-
-        private void cmb_filtro2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-          public List<Entrenador> realizarFiltroPokemones(Liga liga, ETipos tipo)
+        public List<Entrenador> realizarFiltroPorIsla(Liga liga, Islas tipo)
         {
             List<Entrenador> eAux = new List<Entrenador>();
-            Liga lAux = liga;
-            Entrenador entrenadorA ;
             if (liga is not null)
+            {
+                foreach (Entrenador item in liga.Entrenadores)
+                {
+                    if (item.Isla == tipo)
+                    {
+                        eAux.Add(item);
+                    }
+                }
+            }
+            return eAux;
+        }
+        /*
+         Por isla
+        Por entrenadores campeones
+        Por tipo de pokemon 
+         
+         */
+        public List<Entrenador> realizarFiltroPorCampeones(Liga liga, bool esCampeon)
+        {
+            List<Entrenador> eAux = new List<Entrenador>();
+            if (liga is not null)
+            {
+                foreach (Entrenador item in liga.Entrenadores)
+                {
+                    if (item.Campeon == esCampeon)
+                    {
+                        eAux.Add(item);
+                    }
+                }
+            }
+            return eAux;
+        }
+
+        public List<Entrenador> realizarFiltroPokemones(Liga liga, ETipos tipo)
+        {
+            Liga lAux = liga;
+            List<Entrenador> eAux = new List<Entrenador>();
+            Entrenador entrenadorA ;
+            if (lAux is not null)
             {
                 foreach (Entrenador item in lAux.Entrenadores)
                 {
@@ -96,7 +128,24 @@ namespace FormLiga
 
         private void btn_mostrar_Click(object sender, EventArgs e)
         {
-          listaaMostrar =  realizarFiltroPokemones(miLiga, (ETipos)cmb_filtro2.SelectedItem);
+            switch (cmb_filtro.SelectedIndex)
+            {
+                case 0:
+                    listaaMostrar = realizarFiltroPorIsla(miLiga, (Islas)cmb_filtro2.SelectedItem);
+
+                    break;
+                case 1:
+                    
+                    listaaMostrar = realizarFiltroPorCampeones(miLiga, checkB_EsCampeon.Checked);
+
+                    break;
+
+                case 2:
+                    cmb_filtro2.DataSource = Enum.GetValues(typeof(ETipos));
+                    listaaMostrar =  realizarFiltroPokemones(miLiga, (ETipos)cmb_filtro2.SelectedItem);
+
+                    break;
+            }
 
             RefrescarInformacion(Dtg_Entrenadores, listaaMostrar);
         }
@@ -105,6 +154,9 @@ namespace FormLiga
         {
             string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("Informespokemones.json");
             SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, listaaMostrar);
+
+            MessageBox.Show($"Se han exportado la informacion en la sieguiente ruta: \n\n {rutaEntrenadores} ");
+
         }
     }
 }
