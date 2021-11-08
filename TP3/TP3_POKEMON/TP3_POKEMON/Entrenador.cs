@@ -162,25 +162,32 @@ namespace Entidades
 
         #endregion
         #region METODOS
-
-
-        public bool AgregarPokemon(Pokemon pokemon)
-        {
-            if (pokemon is not null) {
-                this.pokemones.Add(pokemon);
-                return true;
-            }
-            return false;
-        }
+        /// <summary>
+        /// un entrenador será igual a otro si tienen  el mismo dni y nombre
+        /// </summary>
+        /// <param name="e1"></param>
+        /// <param name="e2"></param>
+        /// <returns></returns>
         public static bool operator ==(Entrenador e1, Entrenador e2)
         {
             return (e1.Dni == e2.Dni && e1.Nombre == e2.Nombre);
         }
+        /// <summary>
+        /// un entrenador será distinto a otro si no tienen  el mismo dni y nombre
+        /// </summary>
+        /// <param name="e1"></param>
+        /// <param name="e2"></param>
+        /// <returns></returns>
         public static bool operator !=(Entrenador e1, Entrenador e2)
         {
             return !(e1 == e2);
         }
-
+        /// <summary>
+        /// agrega un pokemon a la lista de pokemones del entrenado, valida que no sea un pokemon repetido
+        /// </summary>
+        /// <param name="entrenador"></param>
+        /// <param name="pokemon"></param>
+        /// <returns></returns>
         public static Entrenador operator +(Entrenador entrenador, Pokemon pokemon)
         {
 
@@ -201,8 +208,13 @@ namespace Entidades
             }
             return entrenador;
         }
-      
 
+        /// <summary>
+        /// Elimina un pokemon de la lista de pokemones del entrenado
+        /// </summary>
+        /// <param name="entrenador"></param>
+        /// <param name="pokemon"></param>
+        /// <returns></returns>
         public static Entrenador operator -(Entrenador entrenador, Pokemon pokemon)
         {
             if (pokemon is not null  && entrenador is not null)
@@ -220,7 +232,10 @@ namespace Entidades
         }
 
 
-
+        /// <summary>
+        /// será privado y retorna un string con los datos del entrenador
+        /// </summary>
+        /// <returns></returns>
         private string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -249,7 +264,10 @@ namespace Entidades
             return sb.ToString();
         }
 
-
+        /// <summary>
+        /// retorna mostrarDatos
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return this.MostrarDatos();
