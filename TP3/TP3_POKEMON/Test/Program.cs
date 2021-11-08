@@ -11,6 +11,8 @@ namespace Test
             Liga miLigaPokemon;
             miLigaPokemon = new Liga("ligaPokemon");
             string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("entrenadores.json");
+            SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.Entrenadores);
+
             string rutaPokemon = SerealizacionArchivoJson.GenerarRutaDelArchivo("Pokemones.json");
             //  DESEREALIZACIÓN
 
@@ -75,9 +77,8 @@ namespace Test
                 {
                     new Pokemon (175, "Togepi", ETipos.Fairy,    35,  20, 65, 20, "Flail"),
                     new Pokemon (438, "Bonsly", ETipos.Rock,     50,  80, 95, 10, "Power Whip"),
-                    new Pokemon (458, "Mantyke", ETipos.Water,   45,  20, 50, 50, "Double Hit"),
-                    new Pokemon (360, "Wynaut", ETipos.Psychic,  95,  23, 48, 23, "Gyro Ball"),
-                    new Pokemon (175, "Togepi", ETipos.Fairy,    35,  20, 65, 20, "Flail"),
+                    new Pokemon (458, "Mantyke", ETipos.Water,   45,  20, 50, 50, "Double Hit")
+                 
 
                 });
             Entrenador e6 = new Entrenador(27122876, "Jorge", "Caceruchis", 27, 5, true, Islas.Sétima, new List<Pokemon>

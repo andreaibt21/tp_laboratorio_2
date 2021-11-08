@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+
 
 namespace Entidades
 {
@@ -18,27 +20,53 @@ namespace Entidades
         /// <returns></returns>
         public static string GenerarRutaDelArchivo(string nombreDelArchivo)
         {
-            string rutaAuxiliar = AppDomain.CurrentDomain.BaseDirectory;
-            string rutaDelArchivo = Path.Combine(rutaAuxiliar, nombreDelArchivo);
-            return rutaDelArchivo;
+
+            try
+            {
+                string rutaAuxiliar = AppDomain.CurrentDomain.BaseDirectory;
+                string rutaDelArchivo = Path.Combine(rutaAuxiliar, nombreDelArchivo);
+                return rutaDelArchivo;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error, No se puedo generar la ruta", ex);
+            }
         }
 
         public static void SerealizarAJSON<T>(string rutaDeGuardado, T objeto) where T : class
         {
-            JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions { Converters = { new JsonStringEnumConverter() } };
-            jsonSerializerOptions.WriteIndented = true;
-            string objetoEnJson = JsonSerializer.Serialize(objeto, jsonSerializerOptions);
-            File.WriteAllText(rutaDeGuardado, objetoEnJson);
+            try
+            {
+                JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions { Converters = { new JsonStringEnumConverter() } };
+                jsonSerializerOptions.WriteIndented = true;
+                string objetoEnJson = JsonSerializer.Serialize(objeto, jsonSerializerOptions);
+                File.WriteAllText(rutaDeGuardado, objetoEnJson);
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new SerealizacionesException(ex.Message);
+
+            }
         }
 
         public static T DeseralizarDesdeJSON<T>(string rutaDelArchivo) where T : class 
         {
-            string objetoJson = File.ReadAllText(rutaDelArchivo);
-            JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions { Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) } };
-            jsonSerializerOptions.WriteIndented = true;
+            try
+            {
+                    string objetoJson = File.ReadAllText(rutaDelArchivo);
+                JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions { Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) } };
+                jsonSerializerOptions.WriteIndented = true;
 
-            T objetoDeserealizado = JsonSerializer.Deserialize<T>(objetoJson, jsonSerializerOptions);
-            return objetoDeserealizado;
+                T objetoDeserealizado = JsonSerializer.Deserialize<T>(objetoJson, jsonSerializerOptions);
+                return objetoDeserealizado;
+            }
+            catch (Exception ex)
+            {
+                throw new SerealizacionesException(ex.Message);
+            }
         }
 
 

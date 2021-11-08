@@ -1,0 +1,220 @@
+[
+  {
+    "Dni": 26874159,
+    "Nombre": "Arlina",
+    "Apellido": "Pirulo",
+    "Edad": 25,
+    "CantidadDePokebolas": 5,
+    "Campeon": false,
+    "Isla": "Prima",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 173,
+        "Hp": 50,
+        "Especie": "Cleffa",
+        "Tipo": "Fairy",
+        "Ataque": 25,
+        "Defensa": 28,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Snore"
+      },
+      {
+        "Id": 174,
+        "Hp": 90,
+        "Especie": "Igglybuff",
+        "Tipo": "Normal",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Curse"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      },
+      {
+        "Id": 239,
+        "Hp": 45,
+        "Especie": "Elekid",
+        "Tipo": "Electric",
+        "Ataque": 63,
+        "Defensa": 37,
+        "Velocidad": 95,
+        "NombreDeAtaque": "Twister"
+      }
+    ],
+    "NombreCompleto": "Arlina Pirulo"
+  },
+  {
+    "Dni": 26874159,
+    "Nombre": "Arlina",
+    "Apellido": "Pirulo",
+    "Edad": 25,
+    "CantidadDePokebolas": 5,
+    "Campeon": false,
+    "Isla": "Prima",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 173,
+        "Hp": 50,
+        "Especie": "Cleffa",
+        "Tipo": "Fairy",
+        "Ataque": 25,
+        "Defensa": 28,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Snore"
+      },
+      {
+        "Id": 174,
+        "Hp": 90,
+        "Especie": "Igglybuff",
+        "Tipo": "Normal",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Curse"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      },
+      {
+        "Id": 239,
+        "Hp": 45,
+        "Especie": "Elekid",
+        "Tipo": "Electric",
+        "Ataque": 63,
+        "Defensa": 37,
+        "Velocidad": 95,
+        "NombreDeAtaque": "Twister"
+      }
+    ],
+    "NombreCompleto": "Arlina Pirulo"
+  },
+  {
+    "Dni": 24859756,
+    "Nombre": "Peeta",
+    "Apellido": "Langila",
+    "Edad": 26,
+    "CantidadDePokebolas": 3,
+    "Campeon": true,
+    "Isla": "Secunda",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 298,
+        "Hp": 50,
+        "Especie": "Azurill",
+        "Tipo": "Normal",
+        "Ataque": 20,
+        "Defensa": 40,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Teeter Dance"
+      }
+    ],
+    "NombreCompleto": "Peeta Langila"
+  },
+  {
+    "Dni": 20354526,
+    "Nombre": "Don",
+    "Apellido": "Bosco",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      },
+      {
+        "Id": 173,
+        "Hp": 50,
+        "Especie": "Cleffa",
+        "Tipo": "Fairy",
+        "Ataque": 25,
+        "Defensa": 28,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Snore"
+      },
+      {
+        "Id": 174,
+        "Hp": 90,
+        "Especie": "Igglybuff",
+        "Tipo": "Normal",
+        "Ataque": 30,
+        "Defensa": 15,
+        "Velocidad": 15,
+        "NombreDeAtaque": "Curse"
+      },
+      {
+        "Id": 175,
+        "Hp": 35,
+        "Especie": "Togepi",
+        "Tipo": "Fairy",
+        "Ataque": 20,
+        "Defensa": 65,
+        "Velocidad": 20,
+        "NombreDeAtaque": "Flail"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      }
+    ],
+    "NombreCompleto": "Don Bosco"
+  }
+]

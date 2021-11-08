@@ -205,7 +205,7 @@ namespace Entidades
 
         public static Entrenador operator -(Entrenador entrenador, Pokemon pokemon)
         {
-            if (pokemon is not null)
+            if (pokemon is not null  && entrenador is not null)
             {
                 foreach (Pokemon item in entrenador.Pokemones)
                 {
@@ -224,7 +224,8 @@ namespace Entidades
         private string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Entrenador: { this.Nombre} {this.Apellido}  Dni:{this.Dni}");
+            sb.AppendLine($"Entrenador: { this.Nombre} {this.Apellido}  ");
+            sb.AppendLine($"Dni: {this.Dni}");
             sb.AppendLine($"Edad: {this.Edad}");
             sb.AppendLine($"Cantidad de Pokebolas: {this.CantidadDePokebolas} ");
             sb.AppendLine($"Es campeón: {this.Campeon} ");
@@ -233,7 +234,7 @@ namespace Entidades
 
             if (this.Pokemones.Count != 0)
             {
-                sb.AppendLine($" Pokemones:  ");
+                sb.AppendLine($"Pokemones:  ");
                 sb.AppendLine($"  ");
                 foreach (Pokemon item in this.Pokemones)
                 {

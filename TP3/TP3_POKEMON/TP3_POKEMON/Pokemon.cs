@@ -119,9 +119,7 @@ namespace Entidades
             sb.AppendLine($"Pokemon: { this.Especie} ");
             sb.AppendLine($"Tipo:{this.Tipo}");
             sb.AppendLine($"Hp: {this.Hp}");
-            sb.AppendLine($"Ataque: {this.Ataque} ");
-            sb.AppendLine($"Defensa: {this.Defensa} ");
-            sb.AppendLine($"Velocidad: {this.Velocidad} ");
+            sb.AppendLine($"Ataque: {this.Ataque}   Defensa: {this.Defensa}   Velocidad: {this.Velocidad} ");
             sb.AppendLine($"Nombre de Ataque: {this.NombreDeAtaque} ");
             return sb.ToString();
         }

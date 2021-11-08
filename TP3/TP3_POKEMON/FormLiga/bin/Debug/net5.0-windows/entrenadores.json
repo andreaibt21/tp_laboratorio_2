@@ -58,7 +58,8 @@
         "Velocidad": 95,
         "NombreDeAtaque": "Twister"
       }
-    ]
+    ],
+    "NombreCompleto": "Arlina Pirulo"
   },
   {
     "Dni": 24859756,
@@ -89,7 +90,8 @@
         "Velocidad": 20,
         "NombreDeAtaque": "Teeter Dance"
       }
-    ]
+    ],
+    "NombreCompleto": "Peeta Langila"
   },
   {
     "Dni": 26584258,
@@ -130,7 +132,8 @@
         "Velocidad": 23,
         "NombreDeAtaque": "Gyro Ball"
       }
-    ]
+    ],
+    "NombreCompleto": "Gaston Pelado"
   },
   {
     "Dni": 18495623,
@@ -171,7 +174,8 @@
         "Velocidad": 83,
         "NombreDeAtaque": "Rain Dance"
       }
-    ]
+    ],
+    "NombreCompleto": "Lucas Millenio"
   },
   {
     "Dni": 24515849,
@@ -211,28 +215,9 @@
         "Defensa": 50,
         "Velocidad": 50,
         "NombreDeAtaque": "Double Hit"
-      },
-      {
-        "Id": 360,
-        "Hp": 95,
-        "Especie": "Wynaut",
-        "Tipo": "Psychic",
-        "Ataque": 23,
-        "Defensa": 48,
-        "Velocidad": 23,
-        "NombreDeAtaque": "Gyro Ball"
-      },
-      {
-        "Id": 175,
-        "Hp": 35,
-        "Especie": "Togepi",
-        "Tipo": "Fairy",
-        "Ataque": 20,
-        "Defensa": 65,
-        "Velocidad": 20,
-        "NombreDeAtaque": "Flail"
       }
-    ]
+    ],
+    "NombreCompleto": "Milei Sairus"
   },
   {
     "Dni": 27122876,
@@ -283,7 +268,8 @@
         "Velocidad": 50,
         "NombreDeAtaque": "Double Hit"
       }
-    ]
+    ],
+    "NombreCompleto": "Jorge Caceruchis"
   },
   {
     "Dni": 27302063,
@@ -344,7 +330,8 @@
         "Velocidad": 50,
         "NombreDeAtaque": "Double Hit"
       }
-    ]
+    ],
+    "NombreCompleto": "Andre Fabulosa"
   },
   {
     "Dni": 21458695,
@@ -395,7 +382,8 @@
         "Velocidad": 65,
         "NombreDeAtaque": "Cross Chop"
       }
-    ]
+    ],
+    "NombreCompleto": "Danubio Chacao"
   },
   {
     "Dni": 20354526,
@@ -456,7 +444,8 @@
         "Velocidad": 35,
         "NombreDeAtaque": "Moonlight"
       }
-    ]
+    ],
+    "NombreCompleto": "Don Bosco"
   },
   {
     "Dni": 25849576,
@@ -517,6 +506,7 @@
         "Velocidad": 50,
         "NombreDeAtaque": "Double Hit"
       }
-    ]
+    ],
+    "NombreCompleto": "Ivy Poison"
   }
 ]
