@@ -8,8 +8,13 @@ namespace Entidades
 {
     public class Ciclomotor : Vehiculo
     {
-
-    public Ciclomotor(EMarca marca, string chasis, ConsoleColor color)
+        /// <summary>
+        /// Crea una instancia de Ciclomotor con sus datos.
+        /// </summary>
+        /// <param name="marca">Marca del Ciclomotor.</param>
+        /// <param name="chasis">Chasis del Ciclomotor.</param>
+        /// <param name="color">Color del Ciclomotor.</param>
+        public Ciclomotor(EMarca marca, string chasis, ConsoleColor color)
             :base(marca, chasis, color)
         {
         }

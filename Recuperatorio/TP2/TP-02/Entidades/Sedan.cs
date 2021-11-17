@@ -13,16 +13,23 @@ namespace Entidades
         private ETipo tipo;
 
         /// <summary>
-        /// Por defecto, TIPO será CuatroPuertas
+        /// Crea una instancia de Sedan y Por defecto, TIPO será CuatroPuertas
         /// </summary>
-        /// <param name="marca"></param>
-        /// <param name="chasis"></param>
-        /// <param name="color"></param>
+        /// <param name="marca">Marca del Sedan.</param>
+        /// <param name="chasis">Chasis del Sedan.</param>
+        /// <param name="color">Color del Sedan.</param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color)
             : this( marca, chasis, color, ETipo.CuatroPuertas)
         {
         }
-        
+
+        /// <summary>
+        /// Crea una instancia de Sedan seteando todos sus atributos.
+        /// </summary>
+        /// <param name="marca">Marca del Sedan.</param>
+        /// <param name="chasis">Chasis del Sedan.</param>
+        /// <param name="color">Color del Sedan.</param>
+        /// <param name="tipo">Tipo del Sedan</param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo)
             : base(marca, chasis, color)
         {

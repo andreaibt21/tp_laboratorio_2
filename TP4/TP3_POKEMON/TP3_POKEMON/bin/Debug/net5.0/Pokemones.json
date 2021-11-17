@@ -1,0 +1,182 @@
+[
+    {
+        "id": 172,
+        "especie": "Pichu",
+        "tipo": "Electric",
+        "hP": 20,
+        "ataque": 40,
+        "defensa": 15,
+        "velocidad": 60,
+        "nombreDeAtaque": "Flame Wheel"
+    },
+    {
+        "id": 173,
+        "especie": "Cleffa",
+        "tipo":   "Fairy",
+        "hP": 50,
+        "ataque": 25,
+        "defensa": 28,
+        "velocidad": 15,
+        "nombreDeAtaque": "Snore"
+    },
+    {
+        "id": 174,
+        "especie": "Igglybuff",
+        "tipo": "Normal",
+        "hP": 90,
+        "ataque": 30,
+        "defensa": 15,
+        "velocidad": 15,
+        "nombreDeAtaque": "Curse"
+    },
+    {
+        "id": 175,
+        "especie": "Togepi",
+        "tipo":   "Fairy",
+        "hP": 35,
+        "ataque": 20,
+        "defensa": 65,
+        "velocidad": 20,
+        "nombreDeAtaque": "Flail"
+    },
+    {
+        "id": 236,
+        "especie": "Tyrogue",
+        "tipo":"Fighting",
+        "hP": 35,
+        "ataque": 35,
+        "defensa": 35,
+        "velocidad": 35,
+        "nombreDeAtaque": "Moonlight"
+    },
+    {
+        "id": 238,
+        "especie": "Smoochum",
+        "tipo":    "Ice",
+        "hP": 45,
+        "ataque": 30,
+        "defensa": 15,
+        "velocidad": 65,
+        "nombreDeAtaque": "Cross Chop"
+    },
+    {
+        "id": 239,
+        "especie": "Elekid",
+        "tipo":"Electric",
+        "hP": 45,
+        "ataque": 63,
+        "defensa": 37,
+        "velocidad": 95,
+        "nombreDeAtaque": "Twister"
+    },
+    {
+        "id": 240,
+        "especie": "Magby",
+        "tipo":    "Fire",
+        "hP": 45,
+        "ataque": 75,
+        "defensa": 37,
+        "velocidad": 83,
+        "nombreDeAtaque": "Rain Dance"
+    },
+    {
+        "id": 298,
+        "especie": "Azurill",
+        "tipo": "Normal",
+        "hP": 50,
+        "ataque": 20,
+        "defensa": 40,
+        "velocidad": 20,
+        "nombreDeAtaque": "Teeter Dance"
+    },
+    {
+        "id": 360,
+        "especie": "Wynaut",
+        "tipo": "Psychic",
+        "hP": 95,
+        "ataque": 23,
+        "defensa": 48,
+        "velocidad": 23,
+        "nombreDeAtaque": "Gyro Ball"
+    },
+    {
+        "id": 406,
+        "especie": "Budew",
+        "tipo":  "Grass",
+        "hP": 40,
+        "ataque": 30,
+        "defensa": 35,
+        "velocidad": 55,
+        "nombreDeAtaque": "Dragon Pulse"
+    },
+    {
+        "id": 433,
+        "especie": "Chingling",
+        "tipo": "Psychic",
+        "hP": 45,
+        "ataque": 30,
+        "defensa": 50,
+        "velocidad": 45,
+        "nombreDeAtaque": "Trick Room"
+    },
+    {
+        "id": 438,
+        "especie": "Bonsly",
+        "tipo":    "Rock",
+        "hP": 50,
+        "ataque": 80,
+        "defensa": 95,
+        "velocidad": 10,
+        "nombreDeAtaque": "Power Whip"
+    },
+    {
+        "id": 439,
+        "especie": "Mime Jr.",
+        "tipo":"Psychic",
+        "hP": 20,
+        "ataque": 25,
+        "defensa": 45,
+        "velocidad": 60,
+        "nombreDeAtaque": "Rock Wrecker"
+    },
+    {
+        "id": 440,
+        "especie": "Happiny",
+        "tipo":  "Normal",
+        "hP": 100,
+        "ataque": 5,
+        "defensa": 5,
+        "velocidad": 30,
+        "nombreDeAtaque": "Cross Poison"
+    },
+    {
+        "id": 446,
+        "especie": "Munchlax",
+        "tipo":  "Normal",
+        "hP": 135,
+        "ataque": 85,
+        "defensa": 40,
+        "velocidad": 5,
+        "nombreDeAtaque": "Stealth Rock"
+    },
+    {
+        "id": 447,
+        "especie": "Riolu",
+        "tipo":"Fighting",
+        "hP": 40,
+        "ataque": 70,
+        "defensa": 40,
+        "velocidad": 60,
+        "nombreDeAtaque": "Grass Knot"
+    },
+    {
+        "id": 458,
+        "especie": "Mantyke",
+        "tipo":  "Water",
+        "hP": 45,
+        "ataque": 20,
+        "defensa": 50,
+        "velocidad": 50,
+        "nombreDeAtaque": "Double Hit"
+    }
+]

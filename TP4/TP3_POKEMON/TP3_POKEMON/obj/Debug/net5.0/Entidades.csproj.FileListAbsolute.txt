@@ -1,0 +1,36 @@
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.pdb
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP3\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.pdb
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\Entidades.pdb
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\Entidades.pdb

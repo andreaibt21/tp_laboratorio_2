@@ -1,0 +1,22 @@
+new Pokemon (172, "Pichu",ETipo.Electric,  20,   40, 15, 60, "Flame Wheel"),
+new Pokemon (173, "Cleffa", ETipo.Fairy,    50, 25, 28, 15, "Snore"),
+new Pokemon (174, "Igglybuff", ETipo.Normal,90,  30, 15, 15, "Curse"),
+new Pokemon (175, "Togepi", ETipo.Fairy,    35,  20, 65, 20, "Flail"),
+new Pokemon (236, "Tyrogue", ETipo.Fighting,35,  35, 35, 35, "Moonlight"),
+new Pokemon (238, "Smoochum", ETipo.Ice,    45,  30, 15, 65, "Cross Chop"),
+new Pokemon (239, "Elekid", ETipo.Electric, 45,  63, 37, 95, "Twister"),
+new Pokemon (240, "Magby", ETipo.Fire,      45,  75, 37, 83, "Rain Dance"),
+new Pokemon (298, "Azurill", ETipo.Normal,  50,  20, 40, 20, "Teeter Dance"),
+new Pokemon (360, "Wynaut", ETipo.Psychic,  95,  23, 48, 23, "Gyro Ball"),
+new Pokemon (406, "Budew", ETipo.Grass,     40,  30, 35, 55, "Dragon Pulse"),
+new Pokemon (433, "Chingling", ETipo.Psychic,45 ,30, 50, 45, "Trick Room"),
+new Pokemon (438, "Bonsly", ETipo.Rock,     50,  80, 95, 10, "Power Whip"),
+new Pokemon (439, "Mime Jr.", ETipo.Psychic,20,  25, 45, 60, "Rock Wrecker"),
+new Pokemon (440, "Happiny", ETipo.Normal, 100,  5, 5, 30, "Cross Poison"),
+new Pokemon (446, "Munchlax", ETipo.Normal, 135, 85, 40, 5," Stealth Rock"),
+new Pokemon (447, "Riolu", ETipo.Fighting,  40,  70, 40, 60, "Grass Knot"),
+new Pokemon (458, "Mantyke", ETipo.Water,   45,  20, 50, 50, "Double Hit"),
+Pokemon(int id, string especie, ETipos tipo, int hp, int ataque, int defensa, int velocidad, string nombreDeAtaque)
+
+    
+ 

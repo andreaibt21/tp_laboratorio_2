@@ -8,12 +8,18 @@ namespace Entidades
 {
     public class Suv : Vehiculo
     {
+        /// <summary>
+        /// Crea una instancia de Suv con sus datos.
+        /// </summary>
+        /// <param name="marca">Marca del Suv.</param>
+        /// <param name="chasis">Chasis del Suv.</param>
+        /// <param name="color">Color del Suv.</param>
         public Suv(EMarca marca, string chasis, ConsoleColor color)
             : base(marca, chasis, color)
         {
         }
         /// <summary>
-        /// SUV son 'Grande'
+        /// Propiedad ReadOnly, Retornara 'Grande' Para Suv
         /// </summary>
         protected override ETamanio Tamanio
         {

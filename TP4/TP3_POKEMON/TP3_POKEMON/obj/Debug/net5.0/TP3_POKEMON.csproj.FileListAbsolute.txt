@@ -1,0 +1,12 @@
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.csproj.AssemblyReference.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.AssemblyInfoInputs.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.AssemblyInfo.cs
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.csproj.CoreCompileInputs.cache
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\TP3_POKEMON.deps.json
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\TP3_POKEMON.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\ref\TP3_POKEMON.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\bin\Debug\net5.0\TP3_POKEMON.pdb
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\ref\TP3_POKEMON.dll
+C:\Users\Andrea\source\repos\TP3_POKEMON\TP3_POKEMON\obj\Debug\net5.0\TP3_POKEMON.pdb

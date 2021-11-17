@@ -1,0 +1,12 @@
+[
+  {
+    "Id": 172,
+    "Hp": 20,
+    "Especie": "Pichu",
+    "Tipo": "Electric",
+    "Ataque": 40,
+    "Defensa": 15,
+    "Velocidad": 60,
+    "NombreDeAtaque": "Flame Wheel"
+  }
+]
