@@ -101,6 +101,7 @@ namespace FormLiga
             this.Name = "Form_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liga de pokemones bebes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Menu_FormClosing);
             this.Load += new System.EventHandler(this.Form_Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

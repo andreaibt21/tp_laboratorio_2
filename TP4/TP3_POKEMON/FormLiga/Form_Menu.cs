@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
@@ -14,10 +15,14 @@ namespace FormLiga
     public partial class Form_Menu : Form
     {
         private static Liga miLigaPokemon;
-      
+        private Task BackupDeEntrenadores;
+        CancellationTokenSource cancelarHilo;
+        CancellationToken tokenParaCancelarHilo;
         public Form_Menu()
         {
             InitializeComponent();
+            this.cancelarHilo = new CancellationTokenSource();
+            this.tokenParaCancelarHilo = cancelarHilo.Token;
         }
         private void Form_Menu_Load(object sender, EventArgs e)
         {
@@ -32,6 +37,10 @@ namespace FormLiga
             //DESEREALIZACIÓN
             miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
             miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
+
+          
+            this.BackupDeEntrenadores = new Task(() => this.actualizarArchivoSeguridad(tokenParaCancelarHilo));
+            BackupDeEntrenadores.Start();
         }
         private void btn_inscripcion_Click(object sender, EventArgs e)
         {
@@ -49,6 +58,21 @@ namespace FormLiga
 
             Form_Informes form = new Form_Informes(miLigaPokemon);
             form.ShowDialog();
+        }
+
+        private void actualizarArchivoSeguridad(CancellationToken cancelToken)
+        {
+            while (!cancelToken.IsCancellationRequested)
+            {
+                    string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("Backup_Entrenadores.json");
+                    SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.entrenadores);
+                    Thread.Sleep(10000);
+            }
+        }
+
+        private void Form_Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.cancelarHilo.Cancel();
         }
     }
 }

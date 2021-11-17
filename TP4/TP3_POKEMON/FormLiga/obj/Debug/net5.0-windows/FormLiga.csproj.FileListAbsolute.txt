@@ -67,4 +67,3 @@ C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\T
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\ref\FormLiga.dll
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.pdb
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.genruntimeconfig.cache
-C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\TP4\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.CopyComplete

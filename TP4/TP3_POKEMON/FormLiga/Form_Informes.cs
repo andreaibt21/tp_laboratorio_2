@@ -31,14 +31,7 @@ namespace FormLiga
 
         }
 
-        public static void RefrescarInformacion<T>(DataGridView data, List<T> listaAMostrar)
-        {
-            data.DataSource = null;
-            if (listaAMostrar.Count > 0 && listaAMostrar is not null)
-            {
-                data.DataSource = listaAMostrar;
-            }
-        }
+       
 
         private void cmb_filtro_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -146,8 +139,8 @@ namespace FormLiga
 
                     break;
             }
-
-            RefrescarInformacion(Dtg_Entrenadores, listaaMostrar);
+            Dtg_Entrenadores.ActualizarDataGridV(listaaMostrar);
+          
         }
 
         private void btn_Exportar_Click(object sender, EventArgs e)

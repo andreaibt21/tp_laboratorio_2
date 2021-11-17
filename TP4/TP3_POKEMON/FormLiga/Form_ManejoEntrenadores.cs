@@ -145,7 +145,8 @@ namespace FormLiga
                     numUD_pokebolas.Value = entrenadorAuxiliar.CantidadDePokebolas;
                     checkB_EsCampeon.Checked = entrenadorAuxiliar.Campeon;
                     cmb_Islas.SelectedItem = entrenadorAuxiliar.Isla;
-                    RefrescarLista(entrenadorAuxiliar.Pokemones);
+                    dtg_pokemones.ActualizarDataGridV(entrenadorAuxiliar.Pokemones);
+
                 }
 
             }
@@ -181,14 +182,7 @@ namespace FormLiga
         }
 
        
-        private void RefrescarLista(List<Pokemon> pokemones)
-        {
-            foreach (Pokemon item in pokemones)
-            {
-                dtg_pokemones.DataSource = null;
-                dtg_pokemones.DataSource = pokemones;
-            }
-        }
+      
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {
@@ -204,9 +198,10 @@ namespace FormLiga
 
                     entrenador -= pokemonAEliminar;
                 }
-                RefrescarLista(entrenador.Pokemones);
+                dtg_pokemones.ActualizarDataGridV(entrenador.Pokemones);
+
             }
-           if(this.tipo == ETipo.alta)
+            if (this.tipo == ETipo.alta)
             {
                 pokemonAEliminar = (Pokemon)cmb_pokemon.SelectedItem;
                 
@@ -222,7 +217,8 @@ namespace FormLiga
                     }
 
                 }
-                    RefrescarLista(pokemonesSeleccionados);
+                dtg_pokemones.ActualizarDataGridV(pokemonesSeleccionados);
+
             }
 
 
@@ -242,7 +238,8 @@ namespace FormLiga
 
                     entrenador += pokemonAAgregar;
                 }
-                RefrescarLista(entrenador.Pokemones);
+                dtg_pokemones.ActualizarDataGridV(entrenador.Pokemones);
+
             }
             if (cmb_pokemon.SelectedIndex >= 0 && this.tipo == ETipo.alta)
             {
@@ -267,7 +264,9 @@ namespace FormLiga
                         }
                     }
                 }
-                RefrescarLista(pokemonesSeleccionados);
+                dtg_pokemones.ActualizarDataGridV(pokemonesSeleccionados);
+
+
             }
         }
 
@@ -288,14 +287,12 @@ namespace FormLiga
         private void LimpiarFormulario()
         {
             txt_dni.Clear();
-            txt_dni.Clear();
             txt_nombre.Clear();
             txt_apellido.Clear();
             txt_edad.Clear();
             numUD_pokebolas.Value = 1;
-            checkB_EsCampeon.Checked = false;
             cmb_Islas.SelectedIndex = 1;
-           // list_Pokemones.Items.Clear();
+            checkB_EsCampeon.Checked = false;
             cmb_Entrenadores.DataSource = this.miLiga.Entrenadores.ToList();
         }
 
