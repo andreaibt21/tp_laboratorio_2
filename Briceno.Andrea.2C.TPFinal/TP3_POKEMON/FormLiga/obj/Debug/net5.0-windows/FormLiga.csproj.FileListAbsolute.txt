@@ -97,3 +97,4 @@ C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\B
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\FormLiga\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\FormLiga\obj\Debug\net5.0-windows\FormLiga.csproj.CopyComplete

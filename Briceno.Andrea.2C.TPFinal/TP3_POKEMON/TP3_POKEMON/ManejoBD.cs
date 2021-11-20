@@ -110,8 +110,6 @@ namespace Entidades
             }
             return retorno;
         }
-    
-    
         public bool EliminarPokemon(int idPokemon)
         {
             bool retorno = true;
@@ -148,6 +146,48 @@ namespace Entidades
             }
             return retorno;
            
+        }
+
+        public bool AgregarEntrenadorConPokemon(Entrenador entrenador, int idPokemon)
+        {
+            bool retorno = true;
+
+            try
+            {
+                comando = new SqlCommand();
+                comando.Connection = conexion;
+                int filasAfectadas = 0;
+
+                //foreach (Pokemon item in entrenador.Pokemones)
+                //{
+                    comando.CommandText = "INSERT INTO dbo.EntrenadorPokemon (Dni, IDPokemon) " +
+                                                           "VALUES (@Dni, @IDPokemon)";
+                    comando.Parameters.AddWithValue("@Dni", entrenador.Dni);
+                    comando.Parameters.AddWithValue("@IDPokemon", idPokemon);
+                    //    comando.Parameters.AddWithValue("@IDPokemon", entrenador.Pokemones[0].Id);
+                    conexion.Open();
+                    filasAfectadas = comando.ExecuteNonQuery();
+                    comando.Parameters.Clear();
+                    conexion.Close();
+              //  }
+
+                if (filasAfectadas == 0)
+                {
+                    retorno = false;
+                }
+            }
+            catch (Exception)
+            {
+                retorno = false;
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
+            return retorno;
         }
 
         public bool AgregarEntrenador(Entrenador entrenador)
@@ -293,8 +333,8 @@ namespace Entidades
             }
             return retorno;
         }
-        /*
-        public bool ModificarEntrenador( Entrenador entrenador)
+   
+         public bool ModificarEntrenador2( Entrenador entrenador)
         {
             bool retorno = true;
             int filasAfectadas = 0;
@@ -340,8 +380,51 @@ namespace Entidades
             }
             return retorno;
         }
-        */
+        //public bool ModificarPokemonesDelEntrenador(Pokemon entrenador)
+        //{
+        //    bool retorno = true;
+        //    int filasAfectadas = 0;
 
+        //    try
+        //    {
+        //        comando = new SqlCommand();
+        //        comando.Parameters.AddWithValue("@Dni", entrenador.Dni);
+        //        comando.Parameters.AddWithValue("@Nombre", entrenador.Nombre);
+        //        comando.Parameters.AddWithValue("@Apellido", entrenador.Apellido);
+        //        comando.Parameters.AddWithValue("@Edad", entrenador.Edad);
+        //        comando.Parameters.AddWithValue("@CantidadDePokebolas", entrenador.CantidadDePokebolas);
+        //        comando.Parameters.AddWithValue("@Campeon", entrenador.Campeon);
+        //        comando.Parameters.AddWithValue("@Isla", entrenador.Isla);
+
+        //        comando.CommandText = "UPDATE dbo.Entrenador " +
+        //            " SET  Nombre = @Nombre, Apellido = @Apellido, Edad = @Edad , CantidadDePokebolas =  @CantidadDePokebolas, Campeon =  @Campeon, Isla = @Isla "
+        //        + " WHERE dni = @dni";
+        //        comando.Connection = conexion;
+
+        //        conexion.Open();
+        //        filasAfectadas = comando.ExecuteNonQuery();
+
+
+
+        //        if (filasAfectadas == 0)
+        //        {
+        //            retorno = false;
+        //        }
+
+        //    }
+        //    catch (Exception)
+        //    {
+        //        retorno = false;
+        //    }
+        //    finally
+        //    {
+        //        if (conexion.State == ConnectionState.Open)
+        //        {
+        //            conexion.Close();
+        //        }
+        //    }
+        //    return retorno;
+        //}
 
         public List<Entrenador> ObtenerListaEntrenador()
         {
@@ -350,11 +433,11 @@ namespace Entidades
             try
             {
                 comando = new SqlCommand();
-
                 comando.CommandType = CommandType.Text;
-                comando.CommandText = "SELECT *  FROM Entrenador INNER JOIN entrenadorpokemon" +
-                                      " ON entrenador.dni = entrenadorpokemon.identrenador INNER JOIN pokemones " +
-                                      " ON entranadorpokemon.IdPokemon = pokemon.IdPokemon ";
+                comando.CommandText = "SELECT* FROM Entrenador" +
+                                      " INNER JOIN Pokemon ON Pokemon.Idpokemon = Entrenador.IdPokemon " +
+                                      "  ORDER BY Entrenador.Dni ASC";
+
 
                 comando.Connection = conexion;
                 conexion.Open();
@@ -368,12 +451,12 @@ namespace Entidades
                     if (!existe)
                     {
                         Entrenador entrenador = new Entrenador();
-
+                        entrenador.Dni = dni;
                         entrenador.Nombre = lector["Nombre"].ToString();
                         entrenador.Apellido = lector["Apellido"].ToString();
                         entrenador.Edad = lector.GetInt32("Edad");
                         entrenador.CantidadDePokebolas = lector.GetInt32("CantidadDePokebolas");
-                        entrenador.Campeon = (bool)lector["Apellido"];
+                        entrenador.Campeon = (bool)lector["Campeon"];
                         entrenador.Isla = (Islas)Enum.Parse(typeof(Islas), lector["Isla"].ToString());
                         List<Pokemon> pokemones = new List<Pokemon>();
 
@@ -384,18 +467,9 @@ namespace Entidades
                                                           lector.GetInt32("Ataque"),
                                                            lector.GetInt32("Defensa"),
                                                            lector.GetInt32("Velocidad"),
-                                                           lector["Nombre"].ToString());
+                                                           lector["NombreDeAtaque"].ToString());
                         entrenador += pokemon;
-
-                        //int idPokemon = lector.GetInt32("IdPokemon");
-                        //string especie = lector["Especie"].ToString();
-                        //int hp = lector.GetInt32("Hp");
-                        //ETipos tipo = (ETipos)Enum.Parse(typeof(ETipos), lector["Tipo"].ToString());
-                        //int ataque = lector.GetInt32("Ataque");
-                        //int defensa = lector.GetInt32("Defensa");
-                        //int velocidad = lector.GetInt32("Velocidad");
-                        //string nombreDeAtaque = lector["Nombre"].ToString();
-                       // Pokemon pokemon1 = new Pokemon(idPokemon, especie, tipo, hp, ataque, defensa, velocidad, nombreDeAtaque);
+                        lista.Add(entrenador);
                     }
                     else
                     {
@@ -407,10 +481,54 @@ namespace Entidades
                                                          lector.GetInt32("Ataque"),
                                                           lector.GetInt32("Defensa"),
                                                           lector.GetInt32("Velocidad"),
-                                                          lector["Nombre"].ToString());
+                                                          lector["NombreDeAtaque"].ToString());
                      
                         lista[id].Pokemones.Add(pokemon);
                     }
+                }
+                lector.Close();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
+            }
+
+
+            return lista;
+        }
+        public List<Pokemon> ObtenerListaDePokemones()
+        {
+            List<Pokemon> lista = new List<Pokemon>();
+
+            try
+            {
+                comando = new SqlCommand();
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = "SELECT* FROM Pokemon";
+                comando.Connection = conexion;
+                conexion.Open();
+                lector = comando.ExecuteReader();
+
+                while (lector.Read())
+                {
+                    Pokemon pokemon = new Pokemon(lector.GetInt32("IdPokemon"),
+                                                    lector["Especie"].ToString(),
+                                                        (ETipos)Enum.Parse(typeof(ETipos), lector["Tipo"].ToString()),
+                                                        lector.GetInt32("Hp"),
+                                                        lector.GetInt32("Ataque"),
+                                                        lector.GetInt32("Defensa"),
+                                                        lector.GetInt32("Velocidad"),
+                                                        lector["NombreDeAtaque"].ToString());
+                    lista.Add(pokemon);
                 }
                 lector.Close();
 

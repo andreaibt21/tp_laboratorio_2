@@ -37,6 +37,7 @@ namespace FormLiga
             cmb_Islas.DataSource = Enum.GetValues(typeof(Islas));
             cmb_pokemon.DataSource = miLiga.Pokemones.ToList();
             cmb_pokemon.DisplayMember = "Especie";
+            cmb_Entrenadores.DisplayMember = "NombreCompleto";
 
             if (this.tipo == ETipo.alta)
             {
@@ -77,6 +78,7 @@ namespace FormLiga
                     int.TryParse(txt_dni.Text, out dni);
                     Entrenador entrenador = new Entrenador(dni, txt_nombre.Text, txt_apellido.Text, edad, (int)numUD_pokebolas.Value,checkB_EsCampeon.Checked,(Islas)cmb_Islas.SelectedItem,pokemonesSeleccionados);
                     miLiga += entrenador;
+                    BD.AgregarEntrenador(entrenador);
                     LimpiarFormulario();
                     MessageBox.Show($"Entrenador inscripto exitosamente con los siguientes datos: \n\n {entrenador.ToString()} ");
                     dtg_pokemones.DataSource = null;
@@ -116,8 +118,9 @@ namespace FormLiga
                     entrenadorAuxiliar.Campeon = checkB_EsCampeon.Checked;
                     entrenadorAuxiliar.Isla = (Islas)cmb_Islas.SelectedItem;
                
-                    MessageBox.Show($"Se han actualizado los siguientes datos: \n\n {entrenadorAuxiliar.ToString()} ");
                     BD.ModificarEntrenador(entrenadorAuxiliar);
+                    MessageBox.Show($"Se han actualizado los siguientes datos: \n\n {entrenadorAuxiliar.ToString()} ");
+
                 }
                 else
                 {
@@ -131,6 +134,22 @@ namespace FormLiga
             }
 
         }
+
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+
+
+            Entrenador entrenadorAuxiliar = (Entrenador)cmb_Entrenadores.SelectedItem;
+            if (entrenadorAuxiliar  is not null && this.miLiga is not null)
+            {
+                miLiga -= entrenadorAuxiliar;
+                BD.EliminarEntrenador(entrenadorAuxiliar.Dni);
+                LimpiarFormulario();
+                MessageBox.Show(" Entrenador eliminado correctamente");
+
+            }
+        }
+
 
         private void cmb_Entrenadores_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -162,6 +181,9 @@ namespace FormLiga
                
             if (cmb_TipoEdicion.SelectedIndex == 0)
             {
+                txt_nombre.Enabled = true;
+                txt_apellido.Enabled = true;
+                txt_edad.Enabled = true;
                 btn_Guardar.Visible = true;
                 btn_Eliminar.Visible = false;
                 cmb_Islas.Enabled = true;
@@ -173,19 +195,20 @@ namespace FormLiga
             }
             else
             {
-               
                 btn_Eliminar.Visible = true;
-                cmb_Islas.Enabled = false; 
-                cmb_pokemon.Enabled = false; 
+               
+                txt_nombre.Enabled = false;
+                txt_apellido.Enabled = false;
+                txt_edad.Enabled = false;
                 checkB_EsCampeon.Enabled = false; 
+                cmb_Islas.Enabled = false; 
                 numUD_pokebolas.Enabled = false;
+                cmb_pokemon.Enabled = false; 
                 btnQuitar.Enabled = false;
                 btnAgregar.Enabled = false;
+                
             }
         }
-
-       
-      
 
         private void btnQuitar_Click(object sender, EventArgs e)
         {
@@ -236,6 +259,9 @@ namespace FormLiga
                 pokemonAAgregar = (Pokemon)cmb_pokemon.SelectedItem;
 
                  entrenador = (Entrenador)cmb_Entrenadores.SelectedItem;
+
+                entrenador.CantidadDePokebolas = (int)numUD_pokebolas.Value;
+
                 if (pokemonAAgregar is not null && entrenador is not null)
                 {
 
@@ -272,21 +298,6 @@ namespace FormLiga
 
             }
         }
-
-        private void btn_Eliminar_Click(object sender, EventArgs e)
-        {
-
-
-            Entrenador entrenadorAuxiliar = (Entrenador)cmb_Entrenadores.SelectedItem;
-            if (entrenadorAuxiliar  is not null && this.miLiga is not null)
-            {
-                miLiga -= entrenadorAuxiliar;
-                LimpiarFormulario();
-                MessageBox.Show(" Entrenador eliminado correctamente");
-
-            }
-        }
-
         private void LimpiarFormulario()
         {
             txt_dni.Clear();

@@ -39,8 +39,8 @@ namespace FormLiga
             //SerealizacionArchivoJson.SerealizarAJSON(rutaPokemon, miLigaPokemon.Pokemones);
 
             //DESEREALIZACIÓN
-            miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
-            miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
+          //  miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
+         //   miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
 
 
 
@@ -49,17 +49,23 @@ namespace FormLiga
             BD = new ManejoBD();
             //foreach (Entrenador item in miLigaPokemon.Entrenadores)
             //{
-            //    BD.EliminarEntrenador(item.Dni);
+
+            //    foreach (Pokemon poke in item.Pokemones)
+            //    {
+            //        BD.AgregarEntrenadorConPokemon(item, poke.Id);
+
+            //    }
 
             //}
             //BD.AgregarEntrenador(miLigaPokemon.Entrenadores[0]);
-                //BD.EliminarEntrenador(miLigaPokemon.Entrenadores[0].Dni);
-           //  BD.agregarLaListaDeEntrenadoresALaBD(miLigaPokemon.Entrenadores);
+            //BD.EliminarEntrenador(miLigaPokemon.Entrenadores[0].Dni);
+            //BD.agregarLaListaDeEntrenadoresALaBD(miLigaPokemon.Entrenadores);
             //BD.AgregarPokemon(miLigaPokemon.Pokemones[0]);
             //BD.EliminarPokemon(miLigaPokemon.Pokemones[0].Id);
             //BD.agregarLaListaDePokemonesALaBD(miLigaPokemon.Pokemones);
 
-         //   miLigaPokemon.Entrenadores = BD.ObtenerListaEntrenador();
+            miLigaPokemon.Entrenadores = BD.ObtenerListaEntrenador();
+            miLigaPokemon.Pokemones = BD.ObtenerListaDePokemones();
 
 
 
