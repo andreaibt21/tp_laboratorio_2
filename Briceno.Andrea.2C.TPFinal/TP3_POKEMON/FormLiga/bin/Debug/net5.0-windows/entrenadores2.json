@@ -1,0 +1,122 @@
+[
+  {
+    "IdPokemon": 172,
+    "Dni": 26874159,
+    "Nombre": "Arlina",
+    "Apellido": "Pirulo",
+    "Edad": 25,
+    "CantidadDePokebolas": 5,
+    "Campeon": false,
+    "Isla": "Prima",
+    "Pokemones": [],
+    "NombreCompleto": "Arlina Pirulo"
+  },
+  {
+    "IdPokemon": 173,
+    "Dni": 24859756,
+    "Nombre": "Peeta",
+    "Apellido": "Langila",
+    "Edad": 26,
+    "CantidadDePokebolas": 3,
+    "Campeon": true,
+    "Isla": "Secunda",
+    "Pokemones": [],
+    "NombreCompleto": "Peeta Langila"
+  },
+  {
+    "IdPokemon": 174,
+    "Dni": 26584258,
+    "Nombre": "Gaston",
+    "Apellido": "Pelado",
+    "Edad": 27,
+    "CantidadDePokebolas": 4,
+    "Campeon": false,
+    "Isla": "Quarta",
+    "Pokemones": [],
+    "NombreCompleto": "Gaston Pelado"
+  },
+  {
+    "IdPokemon": 175,
+    "Dni": 18495623,
+    "Nombre": "Lucas",
+    "Apellido": "Millenio",
+    "Edad": 22,
+    "CantidadDePokebolas": 3,
+    "Campeon": false,
+    "Isla": "Prima",
+    "Pokemones": [],
+    "NombreCompleto": "Lucas Millenio"
+  },
+  {
+    "IdPokemon": 236,
+    "Dni": 24515849,
+    "Nombre": "Milei",
+    "Apellido": "Sairus",
+    "Edad": 25,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "Roca_Ombligo",
+    "Pokemones": [],
+    "NombreCompleto": "Milei Sairus"
+  },
+  {
+    "IdPokemon": 239,
+    "Dni": 27122876,
+    "Nombre": "Jorge",
+    "Apellido": "Caceruchis",
+    "Edad": 27,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [],
+    "NombreCompleto": "Jorge Caceruchis"
+  },
+  {
+    "IdPokemon": 240,
+    "Dni": 27302063,
+    "Nombre": "Andre",
+    "Apellido": "Fabulosa",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [],
+    "NombreCompleto": "Andre Fabulosa"
+  },
+  {
+    "IdPokemon": 298,
+    "Dni": 21458695,
+    "Nombre": "Danubio",
+    "Apellido": "Chacao",
+    "Edad": 23,
+    "CantidadDePokebolas": 4,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [],
+    "NombreCompleto": "Danubio Chacao"
+  },
+  {
+    "IdPokemon": 360,
+    "Dni": 20354526,
+    "Nombre": "Don",
+    "Apellido": "Bosco",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "S\u00E9tima",
+    "Pokemones": [],
+    "NombreCompleto": "Don Bosco"
+  },
+  {
+    "IdPokemon": 406,
+    "Dni": 25849576,
+    "Nombre": "Ivy",
+    "Apellido": "Poison",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": false,
+    "Isla": "Quarta",
+    "Pokemones": [],
+    "NombreCompleto": "Ivy Poison"
+  }
+]
