@@ -413,6 +413,11 @@ namespace Entidades
 
             return lista;
         }
+
+        /// <summary>
+        /// Obtiene la lista de pokemones guardada en la base de datos
+        /// </summary>
+        /// <returns></returns>
         public List<Pokemon> ObtenerListaDePokemones()
         {
             List<Pokemon> lista = new List<Pokemon>();
