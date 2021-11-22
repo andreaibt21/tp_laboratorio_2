@@ -29,10 +29,16 @@ namespace FormLiga
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Menu));
             this.btn_inscripcion = new System.Windows.Forms.Button();
             this.btn_Informes = new System.Windows.Forms.Button();
             this.btn_EditarEntrenadores = new System.Windows.Forms.Button();
-            this.lbl_titulo = new System.Windows.Forms.Label();
+            this.pic_pokebola = new System.Windows.Forms.PictureBox();
+            this.pic_titulo = new System.Windows.Forms.PictureBox();
+            this.pic_Bienvenidos = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_pokebola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_titulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Bienvenidos)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_inscripcion
@@ -40,12 +46,13 @@ namespace FormLiga
             this.btn_inscripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_inscripcion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_inscripcion.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_inscripcion.Location = new System.Drawing.Point(110, 59);
+            this.btn_inscripcion.Location = new System.Drawing.Point(110, 63);
             this.btn_inscripcion.Name = "btn_inscripcion";
             this.btn_inscripcion.Size = new System.Drawing.Size(317, 102);
             this.btn_inscripcion.TabIndex = 0;
             this.btn_inscripcion.Text = "Inscribir Entrenadores";
             this.btn_inscripcion.UseVisualStyleBackColor = false;
+            this.btn_inscripcion.Visible = false;
             this.btn_inscripcion.Click += new System.EventHandler(this.btn_inscripcion_Click);
             // 
             // btn_Informes
@@ -59,6 +66,7 @@ namespace FormLiga
             this.btn_Informes.TabIndex = 3;
             this.btn_Informes.Text = "Informes";
             this.btn_Informes.UseVisualStyleBackColor = false;
+            this.btn_Informes.Visible = false;
             this.btn_Informes.Click += new System.EventHandler(this.btn_Informes_Click);
             // 
             // btn_EditarEntrenadores
@@ -72,17 +80,38 @@ namespace FormLiga
             this.btn_EditarEntrenadores.TabIndex = 5;
             this.btn_EditarEntrenadores.Text = "Editar Entrenadores";
             this.btn_EditarEntrenadores.UseVisualStyleBackColor = false;
+            this.btn_EditarEntrenadores.Visible = false;
             this.btn_EditarEntrenadores.Click += new System.EventHandler(this.btn_EditarEntrenadores_Click);
             // 
-            // lbl_titulo
+            // pic_pokebola
             // 
-            this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_titulo.Location = new System.Drawing.Point(55, 22);
-            this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(430, 23);
-            this.lbl_titulo.TabIndex = 6;
-            this.lbl_titulo.Text = "BIENVENIDOS A LA LIGA DE POKEMONES BEBES";
+            this.pic_pokebola.Image = ((System.Drawing.Image)(resources.GetObject("pic_pokebola.Image")));
+            this.pic_pokebola.Location = new System.Drawing.Point(103, 63);
+            this.pic_pokebola.Name = "pic_pokebola";
+            this.pic_pokebola.Size = new System.Drawing.Size(327, 295);
+            this.pic_pokebola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_pokebola.TabIndex = 8;
+            this.pic_pokebola.TabStop = false;
+            // 
+            // pic_titulo
+            // 
+            this.pic_titulo.Image = ((System.Drawing.Image)(resources.GetObject("pic_titulo.Image")));
+            this.pic_titulo.Location = new System.Drawing.Point(25, 8);
+            this.pic_titulo.Name = "pic_titulo";
+            this.pic_titulo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 120);
+            this.pic_titulo.Size = new System.Drawing.Size(483, 49);
+            this.pic_titulo.TabIndex = 9;
+            this.pic_titulo.TabStop = false;
+            // 
+            // pic_Bienvenidos
+            // 
+            this.pic_Bienvenidos.Image = ((System.Drawing.Image)(resources.GetObject("pic_Bienvenidos.Image")));
+            this.pic_Bienvenidos.Location = new System.Drawing.Point(34, 337);
+            this.pic_Bienvenidos.Name = "pic_Bienvenidos";
+            this.pic_Bienvenidos.Padding = new System.Windows.Forms.Padding(120, 0, 0, 0);
+            this.pic_Bienvenidos.Size = new System.Drawing.Size(483, 107);
+            this.pic_Bienvenidos.TabIndex = 10;
+            this.pic_Bienvenidos.TabStop = false;
             // 
             // Form_Menu
             // 
@@ -90,7 +119,9 @@ namespace FormLiga
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(539, 456);
-            this.Controls.Add(this.lbl_titulo);
+            this.Controls.Add(this.pic_Bienvenidos);
+            this.Controls.Add(this.pic_titulo);
+            this.Controls.Add(this.pic_pokebola);
             this.Controls.Add(this.btn_EditarEntrenadores);
             this.Controls.Add(this.btn_Informes);
             this.Controls.Add(this.btn_inscripcion);
@@ -103,8 +134,10 @@ namespace FormLiga
             this.Text = "Liga de pokemones bebes";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Menu_FormClosing);
             this.Load += new System.EventHandler(this.Form_Menu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pic_pokebola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_titulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Bienvenidos)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -113,7 +146,9 @@ namespace FormLiga
         private System.Windows.Forms.Button btn_inscripcion;
         private System.Windows.Forms.Button btn_Informes;
         private System.Windows.Forms.Button btn_EditarEntrenadores;
-        private System.Windows.Forms.Label lbl_titulo;
+        private System.Windows.Forms.PictureBox pic_pokebola;
+        private System.Windows.Forms.PictureBox pic_titulo;
+        private System.Windows.Forms.PictureBox pic_Bienvenidos;
     }
 }
 

@@ -3,7 +3,7 @@
     "Dni": 234654,
     "Nombre": "Ornela",
     "Apellido": "Pirulina",
-    "Edad": 26,
+    "Edad": 20,
     "CantidadDePokebolas": 3,
     "Campeon": true,
     "Isla": "Exta",
@@ -149,7 +149,7 @@
     "Dni": 21458695,
     "Nombre": "Danubio",
     "Apellido": "Chacao",
-    "Edad": 23,
+    "Edad": 19,
     "CantidadDePokebolas": 4,
     "Campeon": true,
     "Isla": "S\u00E9tima",
@@ -317,7 +317,7 @@
     "Dni": 25849576,
     "Nombre": "Ivy",
     "Apellido": "Poison",
-    "Edad": 23,
+    "Edad": 20,
     "CantidadDePokebolas": 5,
     "Campeon": false,
     "Isla": "Quarta",
@@ -520,5 +520,67 @@
       }
     ],
     "NombreCompleto": "Jorge Caceruchis"
+  },
+  {
+    "Dni": 215646488,
+    "Nombre": "Luis",
+    "Apellido": "Figueroa",
+    "Edad": 23,
+    "CantidadDePokebolas": 5,
+    "Campeon": true,
+    "Isla": "Roca_Ombligo",
+    "Pokemones": [
+      {
+        "Id": 446,
+        "Hp": 135,
+        "Especie": "Munchlax",
+        "Tipo": "Normal",
+        "Ataque": 85,
+        "Defensa": 40,
+        "Velocidad": 5,
+        "NombreDeAtaque": "Stealth Rock"
+      },
+      {
+        "Id": 447,
+        "Hp": 40,
+        "Especie": "Riolu",
+        "Tipo": "Fighting",
+        "Ataque": 70,
+        "Defensa": 40,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Grass Knot"
+      },
+      {
+        "Id": 458,
+        "Hp": 45,
+        "Especie": "Mantyke",
+        "Tipo": "Water",
+        "Ataque": 20,
+        "Defensa": 50,
+        "Velocidad": 50,
+        "NombreDeAtaque": "Double Hit"
+      },
+      {
+        "Id": 236,
+        "Hp": 35,
+        "Especie": "Tyrogue",
+        "Tipo": "Fighting",
+        "Ataque": 35,
+        "Defensa": 35,
+        "Velocidad": 35,
+        "NombreDeAtaque": "Moonlight"
+      },
+      {
+        "Id": 172,
+        "Hp": 20,
+        "Especie": "Pichu",
+        "Tipo": "Electric",
+        "Ataque": 40,
+        "Defensa": 15,
+        "Velocidad": 60,
+        "NombreDeAtaque": "Flame Wheel"
+      }
+    ],
+    "NombreCompleto": "Luis Figueroa"
   }
 ]

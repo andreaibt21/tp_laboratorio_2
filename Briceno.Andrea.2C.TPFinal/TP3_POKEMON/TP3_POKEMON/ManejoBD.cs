@@ -110,6 +110,7 @@ namespace Entidades
             }
             return retorno;
         }
+        
         public bool EliminarPokemon(int idPokemon)
         {
             bool retorno = true;
@@ -212,7 +213,6 @@ namespace Entidades
                     comando.Parameters.AddWithValue("@Campeon", entrenador.Campeon);
                     comando.Parameters.AddWithValue("@Isla", entrenador.Isla);
                     comando.Parameters.AddWithValue("@IDPokemon", item.Id);
-                //    comando.Parameters.AddWithValue("@IDPokemon", entrenador.Pokemones[0].Id);
                     conexion.Open();
                     filasAfectadas = comando.ExecuteNonQuery();
                     comando.Parameters.Clear();
@@ -334,52 +334,76 @@ namespace Entidades
             return retorno;
         }
    
-         public bool ModificarEntrenador2( Entrenador entrenador)
-        {
-            bool retorno = true;
-            int filasAfectadas = 0;
+        // public bool ModificarEntrenador2( Entrenador entrenador, List<Pokemon> pokemonesActualizados)
+        //{
+        //    bool retorno = true;
+        //    int filasAfectadas = 0;
 
+        //    try
+        //    {
+        //        comando = new SqlCommand();
 
-            try
-            {
-                comando = new SqlCommand();
-                comando.Parameters.AddWithValue("@Dni", entrenador.Dni);
-                comando.Parameters.AddWithValue("@Nombre", entrenador.Nombre);
-                comando.Parameters.AddWithValue("@Apellido", entrenador.Apellido);
-                comando.Parameters.AddWithValue("@Edad", entrenador.Edad);
-                comando.Parameters.AddWithValue("@CantidadDePokebolas", entrenador.CantidadDePokebolas);
-                comando.Parameters.AddWithValue("@Campeon", entrenador.Campeon);
-                comando.Parameters.AddWithValue("@Isla", entrenador.Isla);
+        //        comando.Connection = conexion;
+        //        foreach (Pokemon itemActualizado in pokemonesActualizados)
+        //        {
+                    
+        //            if (!entrenador.Pokemones.Exists((x) => x.Id == itemActualizado.Id))
+        //            {
+        //                comando.CommandText = "INSERT dbo.Entrenador " +
+        //                    " Nombre = @Nombre, Apellido = @Apellido, Edad = @Edad , CantidadDePokebolas =  @CantidadDePokebolas, " +
+        //                    " Campeon =  @Campeon, Isla = @Isla ,  IDPokemon = @IDPokemon"
+        //                    + " WHERE dni = @dni";
+        //                comando.Parameters.AddWithValue("@IDPokemon", itemActualizado.Id);
 
-                comando.CommandText = "UPDATE dbo.Entrenador " +
-                    " SET  Nombre = @Nombre, Apellido = @Apellido, Edad = @Edad , CantidadDePokebolas =  @CantidadDePokebolas, Campeon =  @Campeon, Isla = @Isla "
-                + " WHERE dni = @dni";
-                comando.Connection = conexion;
+        //            }
+        //            else
+        //            {
+        //                comando.CommandText = "UPDATE dbo.Entrenador " +
+        //                    " SET  Nombre = @Nombre, Apellido = @Apellido, Edad = @Edad , CantidadDePokebolas =  @CantidadDePokebolas, " +
+        //                    " Campeon =  @Campeon, Isla = @Isla "
+        //                + " WHERE dni = @dni";
+        //            }
 
-                conexion.Open();
-                filasAfectadas = comando.ExecuteNonQuery();
+        //        }
+                    
+
+        //            comando.Parameters.AddWithValue("@Dni", entrenador.Dni);
+        //            comando.Parameters.AddWithValue("@Nombre", entrenador.Nombre);
+        //            comando.Parameters.AddWithValue("@Apellido", entrenador.Apellido);
+        //            comando.Parameters.AddWithValue("@Edad", entrenador.Edad);
+        //            comando.Parameters.AddWithValue("@CantidadDePokebolas", entrenador.CantidadDePokebolas);
+        //            comando.Parameters.AddWithValue("@Campeon", entrenador.Campeon);
+        //            comando.Parameters.AddWithValue("@Isla", entrenador.Isla);
+        //            conexion.Open();
+        //            filasAfectadas = comando.ExecuteNonQuery();
+        //            comando.Parameters.Clear();
+        //            conexion.Close();
+
+        //        //conexion.Open();
+        //        //filasAfectadas = comando.ExecuteNonQuery();
            
 
               
-                if (filasAfectadas == 0)
-                {
-                    retorno = false;
-                }
+        //        if (filasAfectadas == 0)
+        //        {
+        //            retorno = false;
+        //        }
 
-            }
-            catch (Exception)
-            {
-                retorno = false;
-            }
-            finally
-            {
-                if (conexion.State == ConnectionState.Open)
-                {
-                    conexion.Close();
-                }
-            }
-            return retorno;
-        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        retorno = false;
+        //    }
+        //    finally
+        //    {
+        //        if (conexion.State == ConnectionState.Open)
+        //        {
+        //            conexion.Close();
+        //        }
+        //    }
+        //    return retorno;
+        //}
+       
         //public bool ModificarPokemonesDelEntrenador(Pokemon entrenador)
         //{
         //    bool retorno = true;

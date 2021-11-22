@@ -19,6 +19,15 @@ namespace FormLiga
         CancellationTokenSource cancelarHilo;
         CancellationToken tokenParaCancelarHilo;
         ManejoBD BD;
+        //public delegate void delegadoCarga();
+        //public event delegadoCarga eventoCarga;
+        //private Task taskCarga;
+
+        public delegate void DelegadoCarga();
+        public event DelegadoCarga EventoCarga;
+        private Task simularCarga;
+
+
         public Form_Menu()
         {
             InitializeComponent();
@@ -28,19 +37,25 @@ namespace FormLiga
         private void Form_Menu_Load(object sender, EventArgs e)
         {
             miLigaPokemon = new Liga("ligaPokemon");
-
-
-
-
             string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("entrenadores.json");
             string rutaPokemon = SerealizacionArchivoJson.GenerarRutaDelArchivo("Pokemones.json");
+
+            //eventoCarga += SimularCarga;
+            //taskCarga = new Task(() => this.SimularCarga());
+            //eventoCarga.Invoke();
+
+
+            EventoCarga += MostrarBotones;
+            this.simularCarga = new Task(() => this.cargarBotones(tokenParaCancelarHilo));
+            simularCarga.Start();
+
             ////SEREALIZACIÓN
             //SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.Entrenadores);
             //SerealizacionArchivoJson.SerealizarAJSON(rutaPokemon, miLigaPokemon.Pokemones);
 
             //DESEREALIZACIÓN
-          //  miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
-         //   miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
+            //  miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
+            //   miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
 
 
 
@@ -96,15 +111,57 @@ namespace FormLiga
         {
             while (!cancelToken.IsCancellationRequested)
             {
-                    string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("Backup_Entrenadores.json");
-                    SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.entrenadores);
-                    Thread.Sleep(10000);
+                string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("Backup_Entrenadores.json");
+                SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.entrenadores);
+                Thread.Sleep(10000);
             }
         }
 
         private void Form_Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.cancelarHilo.Cancel();
+        }
+
+        private void cargarBotones(CancellationToken cancelToken)
+        {
+
+            int cuenta = 0;
+            while (!cancelToken.IsCancellationRequested)
+            {
+                if (this.pic_pokebola.InvokeRequired)
+                {
+                    if (cuenta == 3)
+                    {
+                        this.pic_pokebola.BeginInvoke((MethodInvoker)delegate ()
+                        { 
+                            EventoCarga.Invoke();
+                           
+                        });
+                        break;
+                    }
+                    cuenta++;
+                    Thread.Sleep(1000);
+                }
+                else
+                {
+
+                    pic_pokebola.Visible = true;
+                    pic_Bienvenidos.Visible = true;
+
+
+                }
+
+            }
+        }
+
+        private void MostrarBotones()
+         {
+            btn_inscripcion.Visible = true;
+            btn_EditarEntrenadores.Visible = true;
+            btn_Informes.Visible = true;
+            pic_pokebola.Visible = false;
+            pic_Bienvenidos.Visible = false;
+
         }
     }
 }

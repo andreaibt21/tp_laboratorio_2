@@ -117,8 +117,11 @@ namespace FormLiga
                     entrenadorAuxiliar.CantidadDePokebolas = (int)numUD_pokebolas.Value;
                     entrenadorAuxiliar.Campeon = checkB_EsCampeon.Checked;
                     entrenadorAuxiliar.Isla = (Islas)cmb_Islas.SelectedItem;
-               
-                    BD.ModificarEntrenador(entrenadorAuxiliar);
+                //    entrenadorAuxiliar.Pokemones = pokemonesSeleccionados;
+
+                      BD.ModificarEntrenador(entrenadorAuxiliar);
+                    //BD.ModificarEntrenador2(entrenadorAuxiliar, pokemonesSeleccionados);
+
                     MessageBox.Show($"Se han actualizado los siguientes datos: \n\n {entrenadorAuxiliar.ToString()} ");
 
                 }
@@ -256,19 +259,50 @@ namespace FormLiga
             Entrenador entrenador;
             if (cmb_pokemon.SelectedIndex >= 0 && this.tipo == ETipo.modificacion)
             {
+                //    pokemonAAgregar = (Pokemon)cmb_pokemon.SelectedItem;
+
+
+
+                //    if (pokemonAAgregar is not null && entrenador is not null)
+                //    {
+
+                //        entrenador += pokemonAAgregar;
+                //    }
+                //dtg_pokemones.ActualizarDataGridV(entrenador.Pokemones);
+
+                //   pokemonesSeleccionados;
+
+                entrenador = (Entrenador)cmb_Entrenadores.SelectedItem;
                 pokemonAAgregar = (Pokemon)cmb_pokemon.SelectedItem;
-
-                 entrenador = (Entrenador)cmb_Entrenadores.SelectedItem;
-
                 entrenador.CantidadDePokebolas = (int)numUD_pokebolas.Value;
+                bool yaEstaCargado = false;
 
-                if (pokemonAAgregar is not null && entrenador is not null)
+                if (pokemonAAgregar is not null)
                 {
+                    if ((int)numUD_pokebolas.Value > this.pokemonesSeleccionados.Count)
+                    {
+                        this.pokemonesSeleccionados = entrenador.Pokemones;
+                        //foreach (Pokemon item in entrenador.Pokemones)
+                        //{
+                        //    this.pokemonesSeleccionados.Add(item);
+                        //}
 
-                    entrenador += pokemonAAgregar;
+                       // foreach (Pokemon item in pokemonesSeleccionados)
+                        foreach (Pokemon item in this.pokemonesSeleccionados)
+                            {
+                            if (pokemonAAgregar == item)
+                            {
+                                yaEstaCargado = true;
+                            }
+                        }
+                        if (yaEstaCargado == false)
+                        {
+                            this.pokemonesSeleccionados.Add(pokemonAAgregar);
+
+                        }
+                    }
+                    dtg_pokemones.ActualizarDataGridV(pokemonesSeleccionados);
                 }
-                dtg_pokemones.ActualizarDataGridV(entrenador.Pokemones);
-
             }
             if (cmb_pokemon.SelectedIndex >= 0 && this.tipo == ETipo.alta)
             {
@@ -309,7 +343,5 @@ namespace FormLiga
             checkB_EsCampeon.Checked = false;
             cmb_Entrenadores.DataSource = this.miLiga.Entrenadores.ToList();
         }
-
-    
     }
 }

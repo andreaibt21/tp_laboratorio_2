@@ -17,13 +17,13 @@ namespace Entidades
         private bool campeon;
         private Islas isla;
         private List<Pokemon> pokemones;
-
-
+        
+       
         #region  CONSTRUCTORES
         /// <summary>
         /// inicializa la lista de pokemones
         /// </summary>
-       
+
         public Entrenador()
         {
             this.pokemones = new List<Pokemon>();
@@ -51,6 +51,7 @@ namespace Entidades
             this.campeon = campeon;
             this.isla = isla;
             this.pokemones = pokemones;
+            
         }
         
         #endregion
@@ -212,6 +213,7 @@ namespace Entidades
         {
             return (e1.Dni == e2.Dni && e1.Nombre == e2.Nombre);
         }
+
         /// <summary>
         /// un entrenador será distinto a otro si no tienen  el mismo dni y nombre
         /// </summary>
@@ -222,6 +224,7 @@ namespace Entidades
         {
             return !(e1 == e2);
         }
+  
         /// <summary>
         /// agrega un pokemon a la lista de pokemones del entrenado, valida que no sea un pokemon repetido
         /// </summary>
@@ -270,6 +273,7 @@ namespace Entidades
             }
             return entrenador;
         }
+ 
         /// <summary>
         /// será privado y retorna un string con los datos del entrenador
         /// </summary>
@@ -312,6 +316,11 @@ namespace Entidades
             return this.MostrarDatos();
         }
       
+    
+
+
+
+       
 
         #endregion
     }

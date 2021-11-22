@@ -24,5 +24,8 @@ namespace FormLiga
             }
         }
 
+
+        //actualizar un combobox 
+
     }
 }
