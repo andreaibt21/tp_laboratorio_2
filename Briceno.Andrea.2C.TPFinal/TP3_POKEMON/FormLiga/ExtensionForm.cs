@@ -10,7 +10,7 @@ namespace FormLiga
     public static class ExtensionForm
     {
         /// <summary>
-        /// Actualiza un data grid view con una lista pasada por parametro 
+        /// Actualiza un dataSource del data grid view con una lista pasada por parametro 
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="data">data grid view a usar</param>
@@ -25,7 +25,6 @@ namespace FormLiga
         }
 
 
-        //actualizar un combobox 
 
     }
 }

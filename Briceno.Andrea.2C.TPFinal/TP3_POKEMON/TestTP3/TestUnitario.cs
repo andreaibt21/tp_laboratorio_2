@@ -5,10 +5,8 @@ using System.Collections.Generic;
 namespace TestTP3
 {
     [TestClass]
-    public class Tests
+    public class TestUnitario
     {
-     
-
         [TestMethod]
         public void Test_ProbarIgualdadEntrePokemones_Ok()
         {
@@ -77,8 +75,6 @@ namespace TestTP3
             //Assert
             Assert.IsFalse(retorno);
         }
-
-
         [TestMethod]
         public void Test_ProbarLaconexionConDataBase()
         {

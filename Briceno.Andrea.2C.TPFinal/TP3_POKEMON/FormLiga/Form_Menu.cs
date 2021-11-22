@@ -83,9 +83,6 @@ namespace FormLiga
             miLigaPokemon.Pokemones = BD.ObtenerListaDePokemones();
 
 
-
-
-
             this.BackupDeEntrenadores = new Task(() => this.actualizarArchivoSeguridad(tokenParaCancelarHilo));
             BackupDeEntrenadores.Start();
         }
@@ -112,7 +109,9 @@ namespace FormLiga
             while (!cancelToken.IsCancellationRequested)
             {
                 string rutaEntrenadores = SerealizacionArchivoJson.GenerarRutaDelArchivo("Backup_Entrenadores.json");
-                SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.entrenadores);
+                SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.entrenadores); 
+                string rutaLiga = SerealizacionArchivoJson.GenerarRutaDelArchivo("Backup_Liga.json");
+                SerealizacionArchivoJson.SerealizarAJSON(rutaLiga, miLigaPokemon);
                 Thread.Sleep(10000);
             }
         }
@@ -148,9 +147,7 @@ namespace FormLiga
                     pic_pokebola.Visible = true;
                     pic_Bienvenidos.Visible = true;
 
-
                 }
-
             }
         }
 

@@ -16,8 +16,8 @@ namespace Entidades
         /// <summary>
         /// Genera la ruta del archivo que se guardará 
         /// </summary>
-        /// <param name="nombreDelArchivo"></param>
-        /// <returns></returns>
+        /// <param name="nombreDelArchivo">nombre del atchivo a guardar</param>
+        /// <returns>nombre generado</returns>
         public static string GenerarRutaDelArchivo(string nombreDelArchivo)
         {
 
@@ -36,9 +36,9 @@ namespace Entidades
         /// <summary>
         /// guarda un objeto generico en un archivo de tipo Json que se guardará en la ruta pasada por parámetro
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="rutaDeGuardado"></param>
-        /// <param name="objeto"></param>
+        /// <typeparam name="T">tipo objeto a guardar</typeparam>
+        /// <param name="rutaDeGuardado">donde se guardara el </param>
+        /// <param name="objeto">objeto a guardar</param>
         public static void SerealizarAJSON<T>(string rutaDeGuardado, T objeto) where T : class
         {
             try
@@ -59,7 +59,7 @@ namespace Entidades
         /// <summary>
         /// retorna un objeto generico deserealizado de un archive Json pasado por parámetro
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">tipo de objeto </typeparam>
         /// <param name="rutaDelArchivo"></param>
         /// <returns></returns>
         public static T DeseralizarDesdeJSON<T>(string rutaDelArchivo) where T : class 

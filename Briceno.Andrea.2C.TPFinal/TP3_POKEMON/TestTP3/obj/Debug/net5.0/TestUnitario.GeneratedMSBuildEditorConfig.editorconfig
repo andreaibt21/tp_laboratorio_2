@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = TestUnitario
+build_property.ProjectDir = C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\TestTP3\

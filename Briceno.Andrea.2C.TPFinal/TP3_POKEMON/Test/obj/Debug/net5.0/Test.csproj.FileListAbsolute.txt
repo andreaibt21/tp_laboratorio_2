@@ -37,7 +37,6 @@ C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\B
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\Test.AssemblyInfoInputs.cache
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\Test.AssemblyInfo.cs
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\Test.csproj.CoreCompileInputs.cache
-C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\Test.csproj.CopyComplete
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\Test.dll
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\ref\Test.dll
 C:\Users\Andrea\source\repos\LABORATORIO_2\Trabajos practicos\tp_laboratorio_2\Briceno.Andrea.2C.TPFinal\TP3_POKEMON\Test\obj\Debug\net5.0\Test.pdb

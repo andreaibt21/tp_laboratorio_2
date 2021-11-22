@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormLiga", "FormLiga\FormLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{1C381F24-682F-486F-95B3-D6F2C3932F6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTP3", "TestTP3\TestTP3.csproj", "{821C52EE-9039-4239-89BF-B7B74344AD2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestUnitario", "TestTP3\TestUnitario.csproj", "{821C52EE-9039-4239-89BF-B7B74344AD2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -16,8 +16,8 @@ namespace Test
             string rutaPokemon = SerealizacionArchivoJson.GenerarRutaDelArchivo("Pokemones.json");
             //  DESEREALIZACIÓN
 
-            // miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
-            // miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
+             miLigaPokemon.Entrenadores = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Entrenador>>(rutaEntrenadores);
+            miLigaPokemon.Pokemones = SerealizacionArchivoJson.DeseralizarDesdeJSON<List<Pokemon>>(rutaPokemon);
 
             List<Pokemon> pokemones = new List<Pokemon> {
 
@@ -41,7 +41,7 @@ namespace Test
                 new Pokemon (458, "Mantyke", ETipos.Water,   45,  20, 50, 50, "Double Hit")
             };
 
-            miLigaPokemon.Pokemones = pokemones;
+          //  miLigaPokemon.Pokemones = pokemones;
 
 
 
@@ -125,23 +125,23 @@ namespace Test
                     new Pokemon (458, "Mantyke", ETipos.Water,   45,  20, 50, 50, "Double Hit"),
 
                 });
-            miLigaPokemon += e1;
-            miLigaPokemon += e2;
-            miLigaPokemon += e3;
-            miLigaPokemon += e4;
-            miLigaPokemon += e5;
-            miLigaPokemon += e6;
-            miLigaPokemon += e7;
-            miLigaPokemon += e8;
-            miLigaPokemon += e9;
-            miLigaPokemon += e10;
+            //miLigaPokemon += e1;
+            //miLigaPokemon += e2;
+            //miLigaPokemon += e3;
+            //miLigaPokemon += e4;
+            //miLigaPokemon += e5;
+            //miLigaPokemon += e6;
+            //miLigaPokemon += e7;
+            //miLigaPokemon += e8;
+            //miLigaPokemon += e9;
+            //miLigaPokemon += e10;
            Pokemon p1 = new Pokemon(439, "Mime Jr.", ETipos.Psychic, 20, 25, 45, 60, "Rock Wrecker");
            Pokemon p2 = new Pokemon(439, "Mime Jr.", ETipos.Psychic, 20, 25, 45, 60, "Rock Wrecker");
             Pokemon p3 = new Pokemon(458, "Mantyke", ETipos.Water, 45, 20, 50, 50, "Double Hit");
             SerealizacionArchivoJson.SerealizarAJSON(rutaEntrenadores, miLigaPokemon.Entrenadores);
             SerealizacionArchivoJson.SerealizarAJSON(rutaPokemon, miLigaPokemon.Pokemones);
 
-            Console.WriteLine(p1 == p2);
+            Console.WriteLine(rutaEntrenadores);
             Console.WriteLine(p1 == p3);
             Console.WriteLine(p1 != p3);
             Console.WriteLine(p1 != p3);
