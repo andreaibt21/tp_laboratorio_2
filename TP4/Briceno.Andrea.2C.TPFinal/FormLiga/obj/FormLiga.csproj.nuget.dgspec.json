@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\FormLiga\\FormLiga.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\FormLiga\\FormLiga.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\FormLiga\\FormLiga.csproj",
+        "projectName": "FormLiga",
+        "projectPath": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\FormLiga\\FormLiga.csproj",
+        "packagesPath": "C:\\Users\\Andrea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\FormLiga\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Andrea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\TP3_POKEMON\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\TP3_POKEMON\\Entidades.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\TP3_POKEMON\\Entidades.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\TP3_POKEMON\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\TP3_POKEMON\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Andrea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrea\\source\\repos\\LABORATORIO_2\\Trabajos practicos\\tp_laboratorio_2\\TP4\\Briceno.Andrea.2C.TPFinal\\TP3_POKEMON\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Andrea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
