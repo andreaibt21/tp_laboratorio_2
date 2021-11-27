@@ -15,7 +15,7 @@ namespace Entidades
         /// <param name="chasis">Chasis del Suv.</param>
         /// <param name="color">Color del Suv.</param>
         public Suv(EMarca marca, string chasis, ConsoleColor color)
-            : base(marca, chasis, color)
+            : base(chasis, marca, color)
         {
         }
         /// <summary>
@@ -37,7 +37,6 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();

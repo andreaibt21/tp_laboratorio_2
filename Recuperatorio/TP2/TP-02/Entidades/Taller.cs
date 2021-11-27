@@ -53,18 +53,13 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", taller.vehiculos.Count, taller.espacioDisponible);
+            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles",
+                              taller.vehiculos.Count, taller.espacioDisponible);
             sb.AppendLine("");
             foreach (Vehiculo v in taller.vehiculos)
             {
                 switch (tipo)
                 {
-                    case ETipo.Todos:
-                        
-                        sb.AppendLine(v.Mostrar());
-                        
-                        break;
-
                     case ETipo.Ciclomotor:
                        
                         if(v is Ciclomotor)
@@ -88,8 +83,10 @@ namespace Entidades
                             sb.AppendLine(v.Mostrar());
                         }
                          break;
+                    default:
+                        sb.AppendLine(v.Mostrar());
+                        break;
 
-                  
                 }
             }
 
@@ -106,7 +103,7 @@ namespace Entidades
         /// <returns>retorna la lista de vehiculos</returns>
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
-            if ( !(taller is null && vehiculo is null)  && 
+            if ( !(taller is null) && !(vehiculo is null)  && 
                 taller.vehiculos.Count < taller.espacioDisponible )
             {
                 foreach (Vehiculo v in taller.vehiculos)
@@ -129,7 +126,7 @@ namespace Entidades
         /// <returns>retorna la lista de vehiculos </returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
-            if ( !(taller is null && vehiculo is null) )
+            if ( !(taller is null) && !(vehiculo is null) )
             {
                 foreach (Vehiculo v in taller.vehiculos)
                 {

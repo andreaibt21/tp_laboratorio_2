@@ -31,7 +31,7 @@ namespace Entidades
         /// <param name="color">Color del Sedan.</param>
         /// <param name="tipo">Tipo del Sedan</param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo)
-            : base(marca, chasis, color)
+            : base(chasis, marca, color)
         {
             this.tipo = tipo;
         }
@@ -55,7 +55,6 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine($" {base.Mostrar()}  TIPO : {this.tipo}");
-            sb.AppendLine( "");
             sb.AppendLine("---------------------");
 
             return sb.ToString();

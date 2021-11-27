@@ -37,7 +37,7 @@ namespace Entidades
         /// <param name="chasis">Chasis del vehiculo.</param>
         /// <param name="marca">Marca del vehiculo.</param>
         /// <param name="color">Color del vehiculo.</param>
-        public Vehiculo( EMarca marca, string chasis , ConsoleColor color)
+        public Vehiculo(string chasis, EMarca marca, ConsoleColor color)
         {
             this.marca = marca;
             this.chasis = chasis;

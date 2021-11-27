@@ -8,8 +8,13 @@ namespace Entidades
 {
     public class Ciclomotor : Vehiculo
     {
-
-    public Ciclomotor(EMarca marca, string chasis, ConsoleColor color)
+        /// <summary>
+        /// Constructor de un ciclomotor
+        /// </summary>
+        /// <param name="marca">marca del ciclomotor</param>
+        /// <param name="chasis">chasis del ciclomotor</param>
+        /// <param name="color">color del ciclomotor</param>
+        public Ciclomotor(EMarca marca, string chasis, ConsoleColor color)
             :base(marca, chasis, color)
         {
         }
@@ -34,8 +39,6 @@ namespace Entidades
 
             sb.AppendLine("CICLOMOTOR");
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine($"TAMAÑO : {this.Tamanio}");
-            sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();

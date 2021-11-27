@@ -15,7 +15,7 @@ namespace Entidades
         /// <param name="chasis">Chasis del Ciclomotor.</param>
         /// <param name="color">Color del Ciclomotor.</param>
         public Ciclomotor(EMarca marca, string chasis, ConsoleColor color)
-            :base(marca, chasis, color)
+            :base(chasis, marca, color)
         {
         }
         
@@ -38,7 +38,6 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();

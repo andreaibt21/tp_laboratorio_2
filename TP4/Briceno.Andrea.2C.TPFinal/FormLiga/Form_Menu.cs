@@ -150,7 +150,16 @@ namespace FormLiga
                 }
             }
         }
-
+        /*
+         metodo/cosa que hará el evento ----->   MostrarBotones LA CONSECUENCIA
+         donde corre el hilo, (esperas tres segundos para hacer el evento de arriba)  -> cargarBotones DESDE DONDE 
+         tipo de delegado a usar -----     public delegate void DelegadoCarga();   -- TIPO DE DELEGADO QUE SIEMPRE NECESITAS 
+         evento que usa un delegafo -----  public event DelegadoCarga EventoCarga; ---- NOMBRE DEL EVENTO 
+         la tarea que inicia TOODO ------- private Task simularCarga; ----- TAREA ----- ESTE ES LUCAS 
+         
+         
+         
+         */
         private void MostrarBotones()
          {
             btn_inscripcion.Visible = true;
